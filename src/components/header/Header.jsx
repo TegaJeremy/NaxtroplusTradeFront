@@ -4,23 +4,11 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
 import "./Header.css";
 import "./HeaderMedia.css";
-import CITADEL from "../../assets/citadel1.png";
+import naxtrologo from "../../assets/naxtrologo.png";
 
 const Header = () => {
-  const [menu, setMenu] = useState(false);
+  const [menu, setMenu] = useState(false)
 
-  // useEffect(() => {
-  //   // Dynamically load the LiveCoinWatch script
-  //   const script = document.createElement("script");
-  //   script.src = "https://www.livecoinwatch.com/static/lcw-widget.js";
-  //   script.defer = true;
-  //   document.body.appendChild(script);
-
-  //   // Cleanup function
-  //   return () => {
-  //     document.body.removeChild(script);
-  //   };
-  // }, []);
 
   return (
     <>
@@ -43,18 +31,13 @@ const Header = () => {
         <div className="home-header-container">
           <div className="home-header-wrapper">
             <div className="home-header-wrapper-logo">
-              <img src={CITADEL} alt="company logo" />
+              <img src={naxtrologo} alt="company logo" />
             </div>
             {/*  */}
             <div className="home-header-wrappper-menu">
               <ul>
                 <li>
                   <NavLink to='/' className={({ isActive }) => isActive ? 'menuactive' : 'menunotactive'}>Home</NavLink>
-                </li>
-                <li className="navLinks">
-                  <a href="https://vault-investment-project.vercel.app/">
-                    wallet
-                  </a>
                 </li>
                 <li>
                   <NavLink to='/about' className={({ isActive }) => isActive ? 'menuactive' : 'menunotactive'}>About Us</NavLink>

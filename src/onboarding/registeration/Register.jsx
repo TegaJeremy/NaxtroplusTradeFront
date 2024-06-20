@@ -12,7 +12,7 @@ import visibilityIcon from "../../assets/svg/visibilityIcon.svg";
 
 // import citadelLogo from "../../../public/CITADEL GOLD LOGOmain.png";
 // import citadelLogo from "../../assets/image/citadelLogo.png";
-import citadelLogo from "../../assets/citadel2.png";
+import naxtrologo from "../../assets/naxtrologo.png";
 
 const Register = () => {
   const nav = useNavigate();
@@ -215,7 +215,7 @@ const Register = () => {
                 <div className="Login_LogoPart">
                   <Link to={"/"}>
                     <img
-                      src={citadelLogo}
+                      src={naxtrologo}
                       height={120}
                       alt="citadelLogo"
                       className="Login_LogoPart_Img"
@@ -328,7 +328,7 @@ const Register = () => {
                     <span
                       onClick={() => nav("/login")}
                       style={{
-                        color: "purple",
+                        color: "gold",
                         textDecoration: "underline",
                         cursor: "pointer",
                       }}
@@ -342,7 +342,7 @@ const Register = () => {
               <section className="signUpInput_Wrapper">
                 <div className="Login_LogoPart">
                   <img
-                    src={citadelLogo}
+                    src={naxtrologo}
                     height={120}
                     alt="citadelLogo"
                     className="Login_LogoPart_Img"
@@ -507,7 +507,7 @@ const Register = () => {
                     <span
                       onClick={() => nav("/login")}
                       style={{
-                        color: "orange",
+                        color: "gold",
                         textDecoration: "underline",
                         cursor: "pointer",
                       }}

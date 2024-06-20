@@ -10,6 +10,12 @@
   height: auto;
   display: flex;
   flex-direction: column;
+  background: 
+    linear-gradient(to left, rgba(0, 0, 0, 0.903), rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.707)), 
+    url('../assets/starbg.jpeg');
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-position: center; */
 }
 
 .hero-holder {
@@ -101,6 +107,7 @@
   align-items: center;
   justify-content: center;
   font-weight: 700;
+  color: whitesmoke;
 }
 
 .section2-Home-MainContainer {
@@ -136,14 +143,15 @@
 .section2-txt-container p {
   font-size: 15px;
   font-family: 'Poppins', sans-serif;
-  color: #6a7c92;
+  /* color: #6a7c92; */
+  color: whitesmoke;
   line-height: 28px;
 }
 
 .section3-Home {
   width: 100%;
   height: auto;
-  background-color: rgb(253, 244, 226);
+  background-color: rgba(255, 217, 0, 0.164);
   /* background-color: yellow; */
   display: flex;
   flex-direction: column;
@@ -168,7 +176,7 @@
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
-  background-color: orange;
+  background-color: gold;
   color: white;
   padding-inline: 1.5rem;
   padding-block: 1rem;
@@ -180,6 +188,7 @@
   font-size: 25px;
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
+  color: whitesmoke;
 }
 
 .section3-Home-mainContainer {
@@ -193,7 +202,7 @@
 .section4_Home {
   width: 100%;
   height: auto;
-  background-color: darkblue;
+  background-color: rgba(0, 0, 0, 0.516);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -234,12 +243,11 @@
   padding-block: 1rem;
   border-radius: 10px;
   color: white;
-  background: orange;
   background: linear-gradient(
-    276deg,
-    rgb(222, 151, 18) 49%,
-    darkblue 100%
-  );
+      240deg,
+      gold,
+      black
+    );
 }
 
 .section4-home-imgContainer {
@@ -278,6 +286,7 @@
   font-size: 40px;
   font-weight: 700;
   font-family: 'Roboto', sans-serif;
+  color: whitesmoke;
 }
 
 .section5-home-logo-icons {
@@ -317,7 +326,7 @@
 .section5-Home-textHolder p {
   font-size: 15px;
   font-family: 'Poppins', sans-serif;
-  color: #6a7c92;
+  color: whitesmoke;
   line-height: 28px;
 }
 

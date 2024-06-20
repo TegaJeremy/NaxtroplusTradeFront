@@ -1,6 +1,6 @@
 .footer-section {
-  background-color: darkblue;
-  color: #fff;
+  background-color: rgba(0, 0, 0, 0.974);
+  color: whitesmoke;
   padding: 2rem 4rem;
 }
 
@@ -13,7 +13,7 @@
 
 .needfree-contact-support {
   font-size: 0.8rem;
-  color: #fff;
+  color: whitesmoke;
   transition: none;
 }
 
@@ -60,13 +60,13 @@
 }
 
 .footer-link {
-  transition: all 05s;
+  text-decoration: none;
+  color: whitesmoke;
 }
 
 .footer-link:hover {
-  text-decoration: underline;
-  /* transition: d; */
-  transition: all4s;
+  color: gold;
+  text-decoration: none;
 }
 
 .copyright {

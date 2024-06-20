@@ -8,7 +8,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 // import citadelLogo from "/CITADEL GOLD LOGOmain.png";
 // import citadelLogo from "../../assets/image/citadelLogo.png";
-import citadelLogo from "../../assets/citadel2.png";
+import naxtrologo from "../../assets/naxtrologo.png";
 // import bulb from "../../assets/bulb with image on.png";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -135,7 +135,7 @@ const Login = () => {
             <div className="Login_LogoPart">
               <Link to={"/"}>
                 <img
-                  src={citadelLogo}
+                  src={naxtrologo}
                   height={120}
                   alt="citadelLogo"
                   className="Login_LogoPart_Img"
@@ -219,7 +219,7 @@ const Login = () => {
                 <span
                   onClick={() => nav("/register")}
                   style={{
-                    color: "orange",
+                    color: "gold",
                     textDecoration: "underline",
                     cursor: "pointer",
                   }}
@@ -231,7 +231,7 @@ const Login = () => {
                 onClick={() => nav("/forget_password")}
                 className="Forgot_Span span-color"
                 style={{
-                  color: "orange",
+                  color: "gold",
                   // textDecoration: "underline",
                   cursor: "pointer",
                   fontSize: "13px",
