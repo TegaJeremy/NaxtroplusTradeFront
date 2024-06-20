@@ -23,7 +23,7 @@ const AssignProfit = () => {
     setLoading(true);
     try {
       const response = await axios.post(
-        `https://citadel-inv.onrender.com/assignProfit`,
+        `https://naxtrotrade.onrender.com/assignProfit`,
         { userId, profit },
         {
           headers: {

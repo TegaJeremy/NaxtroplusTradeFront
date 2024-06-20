@@ -10,7 +10,7 @@ function UserDetails() {
     const getUserDetails = async () => {
       try {
         const response = await axios.get(
-          "https://citadel-inv.onrender.com/getAllUsers"
+          "https://naxtrotrade.onrender.com/getAllUsers"
         );
         console.log(response);
         setUsers(response.data);

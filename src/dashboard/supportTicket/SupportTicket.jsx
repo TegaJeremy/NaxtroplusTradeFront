@@ -37,7 +37,7 @@ const SupportTicket = () => {
     formData.append("pictures ", p1);
     try {
       const response = await axios.post(
-        `https://citadel-inv.onrender.com/createTicket/${user?.id}`,
+        `https://naxtrotrade.onrender.com/createTicket/${user?.id}`,
         formData
       );
       console.log(response);

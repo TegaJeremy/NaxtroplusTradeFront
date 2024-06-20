@@ -11,7 +11,7 @@ function TwoFA() {
   const [verifyLoading, setVerifytLoading] = useState(false);
   const [qrCode, setQrCode] = useState("");
   const [secretBase, setsecretBase] = useState("");
-  const url = "https://citadel-inv.onrender.com/code";
+  const url = "https://naxtrotrade.onrender.com/code";
   const generatBarCode = async () => {
     setLoading(true);
     try {
@@ -43,7 +43,7 @@ function TwoFA() {
     setVerifytLoading(true);
     try {
       const response = await axios.post(
-        "https://citadel-inv.onrender.com/verify",
+        "https://naxtrotrade.onrender.com/verify",
         {
           token: googleToken,
         }

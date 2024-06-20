@@ -29,7 +29,7 @@ const Dashboard = () => {
   async function getTotalDeposit() {
     try {
       const response = await axios.get(
-        `https://citadel-inv.onrender.com/getTotalDeposit/${id}`
+        `https://naxtrotrade.onrender.com/getTotalDeposit/${id}`
       );
       console.log(response);
       setTotalDeposit(response?.data?.totalDeposit);
@@ -49,7 +49,7 @@ const Dashboard = () => {
   async function getTotalWithdrawal() {
     try {
       const response = await axios.get(
-        `https://citadel-inv.onrender.com/getTotalWithdraw/${id}`
+        `https://naxtrotrade.onrender.com/getTotalWithdraw/${id}`
       );
       console.log(response);
       setTotalWithdrawal(response?.data?.totalWithdraw);
@@ -69,7 +69,7 @@ const Dashboard = () => {
   async function getLatestTransaction() {
     try {
       const response = await axios.get(
-        `https://citadel-inv.onrender.com/getLatestTransaction/${id}`
+        `https://naxtrotrade.onrender.com/getLatestTransaction/${id}`
       );
       console.log(response);
       setlastestTransaction(response.data?.data);

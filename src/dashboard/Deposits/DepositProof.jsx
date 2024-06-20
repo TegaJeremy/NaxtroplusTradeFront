@@ -37,7 +37,7 @@ function DepositProof() {
           formData.append("proofOfPayment", proof);
           formData.append("amount", depositAmount);
           const response = await axios.post(
-            `https://citadel-inv.onrender.com/DepositFunds/${user._id}`,
+            `https://naxtrotrade.onrender.com/DepositFunds/${user._id}`,
             formData
           );
           console.log(response);

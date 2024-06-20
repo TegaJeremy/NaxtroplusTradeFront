@@ -50,7 +50,7 @@ const Login = () => {
         formData.append("password", password);
 
         const response = await axios.post(
-          "https://citadel-inv.onrender.com/login",
+          "https://naxtrotrade.onrender.com/login",
           { emailOrUserName: emailOrUser, password: password }
         );
         console.log(response);

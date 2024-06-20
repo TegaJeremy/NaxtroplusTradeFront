@@ -28,7 +28,7 @@ const DeleteUser = () => {
         const formData = new FormData();
         formData.append("email", email.trim());
         const response = await axios.put(
-          `https://citadel-inv.onrender.com/delete`,
+          `https://naxtrotrade.onrender.com/delete`,
           { email },
           {
             headers: {
@@ -67,7 +67,7 @@ const DeleteUser = () => {
         const formData = new FormData();
         formData.append("email", email.trim());
         const response = await axios.put(
-          `https://citadel-inv.onrender.com/deacvtivateUser`,
+          `https://naxtrotrade.onrender.com/deacvtivateUser`,
           { email },
           {
             headers: {

@@ -24,7 +24,7 @@ const ChangePassword = () => {
       setPasswordError(false);
       try {
         const response = await axios.post(
-          `https://citadel-inv.onrender.com/changePassword/${userToken?.token}`,
+          `https://naxtrotrade.onrender.com/changePassword/${userToken?.token}`,
           passBody,
           {
             headers: {

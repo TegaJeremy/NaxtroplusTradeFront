@@ -15,7 +15,7 @@ const ForgetPassword = () => {
   const [loading, setloading] = useState(false);
   const [email, setEmail] = useState("");
   const nav = useNavigate();
-  const url = `https://citadel-inv.onrender.com/forgotPassword`;
+  const url = `https://naxtrotrade.onrender.com/forgotPassword`;
 
   const sendMailForPassword = async () => {
     if (!email.trim()) {

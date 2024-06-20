@@ -10,7 +10,7 @@ function PendingTickets() {
     setLoading(true);
     try {
       const response = await axios.get(
-        `https://citadel-inv.onrender.com/getUsersKYCWithUnverifiedKYC`
+        `https://naxtrotrade.onrender.com/getUsersKYCWithUnverifiedKYC`
       );
       console.log(response);
       setLoading(false);

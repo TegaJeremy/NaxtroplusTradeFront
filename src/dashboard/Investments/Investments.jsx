@@ -92,7 +92,7 @@ function Investments() {
       console.log(parsedInfo._id);
 
       const response = await axios.post(
-        ` https://citadel-inv.onrender.com/${investType}/${parsedInfo._id}`,
+        ` https://naxtrotrade.onrender.com/${investType}/${parsedInfo._id}`,
         data,
         config
       );

@@ -95,7 +95,7 @@ const UserMenu = () => {
   async function getAccountBalanceDetails() {
     try {
       const response = await axios.get(
-        `https://citadel-inv.onrender.com/getUserTotalBalance/${id}`
+        `https://naxtrotrade.onrender.com/getUserTotalBalance/${id}`
       );
       console.log(response);
       dispatch(getAccountBalance(response.data.accountBalance));
@@ -109,7 +109,7 @@ const UserMenu = () => {
   async function getDepositWallet() {
     try {
       const response = await axios.get(
-        `https://citadel-inv.onrender.com/getUserDepositWallet/${id}`
+        `https://naxtrotrade.onrender.com/getUserDepositWallet/${id}`
       );
 
       console.log(response);
@@ -132,7 +132,7 @@ const UserMenu = () => {
   async function getReferalWallet() {
     try {
       const response = await axios.get(
-        `https://citadel-inv.onrender.com/getUserReferalWallet/${id}`
+        `https://naxtrotrade.onrender.com/getUserReferalWallet/${id}`
       );
       console.log(response);
       setInitReferalApi(response?.data?.referalWallet);
@@ -154,7 +154,7 @@ const UserMenu = () => {
   async function getIntersetWallet() {
     try {
       const response = await axios.get(
-        `https://citadel-inv.onrender.com/getUserIntrestWallet/${id}`
+        `https://naxtrotrade.onrender.com/getUserIntrestWallet/${id}`
       );
       console.log(response);
       setnitInterestApi(response.data?.intrestWallet);
@@ -196,7 +196,7 @@ const UserMenu = () => {
     setLoading(true);
     try {
       const response = await axios.post(
-        `https://citadel-inv.onrender.com/logout/${id}`,
+        `https://naxtrotrade.onrender.com/logout/${id}`,
         null,
         {
           headers: {

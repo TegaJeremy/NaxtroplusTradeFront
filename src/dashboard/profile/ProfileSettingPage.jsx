@@ -48,7 +48,7 @@ function ProfileSettingPage({ user }) {
     setLoading(true);
     try {
       const response = await axios.put(
-        `https://citadel-inv.onrender.com/updateUser/${userId}`,
+        `https://naxtrotrade.onrender.com/updateUser/${userId}`,
         formData,
         config
       );
