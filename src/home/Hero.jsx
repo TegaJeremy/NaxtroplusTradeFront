@@ -3,6 +3,9 @@ import CountUp from "react-countup";
 import { motion } from "framer-motion";
 import earth from "./images/earth.png";
 import "./hero.css";
+import First from "../assets/First.jpg";
+import Second from "../assets/Second.webp";
+import Third from "../assets/Third.webp";
 
 const Hero = () => {
   
@@ -25,7 +28,7 @@ const Hero = () => {
   const Context = [
     {
       id: 1,
-      //   image: First,
+      image: First,
       HeadText: "Naxtro Tradeplus",
       HeadText2: "EFFICIENT AND RELIABLE",
       SubHeaderText:
@@ -33,7 +36,7 @@ const Hero = () => {
     },
     {
       id: 2,
-      //   image: Second,
+      image: Second,
       HeadText: "Naxtro Tradeplus CORE",
       HeadText2: "EASY WAY TO TRADE",
       SubHeaderText:
@@ -41,7 +44,7 @@ const Hero = () => {
     },
     {
       id: 3,
-      //   image: Third,
+      image: Third,
       HeadText: "THE MOST SECURE",
       HeadText2: "TRADING PLATFORM",
       SubHeaderText: "Profitable investments when you trade and invest with us",
@@ -76,36 +79,15 @@ const Hero = () => {
   return (
     <div className="hero_section">
       <div className="the_hero">
-        {/* <img src={Context[currentSlide].image} alt={Context[currentSlide].HeadText} className='w-full h-full object-cover' /> */}
-        <div className="hero_writeup">
+        <div className="hero_writeup" 
+          style={{
+            backgroundImage: `linear-gradient(to left, rgba(0, 0, 0, 0.934), rgba(0, 0, 0, 0.918), rgba(0, 0, 0, 0.893)),
+            url(${Context[currentSlide].image}`,
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            }} >
           <div className="hero_writeup_text">
-            {/* <motion.div
-              className="hero_writeup_img"
-              initial={{
-                opacity: 0,
-                y: "110vh",
-              }}
-              animate={{ y: 0 }}
-              transition={{
-                type: "spring",
-                stiffness: 10,
-                mass: 1,
-                duration: 5,
-              }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-              }}
-              // viewport={{ margin: "-40px" }}
-            >
-              <motion.img
-                src={earth}
-                alt="mobilePhone"
-                className="earth_img"
-                animate={{ rotate: [0, 360] }}
-                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-              ></motion.img>
-            </motion.div> */}
             {(() => {
               const { initialText, lastWord } = splitLastWord(
                 Context[currentSlide].HeadText
@@ -113,7 +95,7 @@ const Hero = () => {
               return (
                 <h1>
                   {initialText}{" "}
-                  <span style={{ color: "orange" }}>{lastWord}</span>
+                  <span style={{ color: "gold" }}>{lastWord}</span>
                 </h1>
               );
             })()}
@@ -123,7 +105,7 @@ const Hero = () => {
               );
               return (
                 <h1>
-                  <span style={{ color: "orange" }}>{initialText}</span>{" "}
+                  <span style={{ color: "gold" }}>{initialText}</span>{" "}
                   {lastWord}
                 </h1>
               );

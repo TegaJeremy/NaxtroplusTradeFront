@@ -92,7 +92,7 @@ const Home = () => {
                     opacity: 1,
                     y: 0,
                   }}
-                  viewport={{ margin: "-40px" }}
+                  viewport={{ margin: "-40px", once: "true" }}
                 ></motion.img>
               </div>
               <motion.div
@@ -109,7 +109,7 @@ const Home = () => {
                   opacity: 1,
                   y: 0,
                 }}
-                viewport={{ margin: "-40px" }}
+                viewport={{ margin: "-40px", once: "true" }}
                 className="section2-txt-container"
               >
                 <p>
@@ -164,7 +164,7 @@ const Home = () => {
                   x: 0,
                   //   delay: stagger(0.05),
                 }}
-                viewport={{ margin: "-40px" }}
+                viewport={{ margin: "-40px", once: "true" }}
               >
                 OUR INVESTMENT PLANS
               </motion.h4>
@@ -184,7 +184,7 @@ const Home = () => {
                   x: 0,
                   //   delay: stagger(0.05),
                 }}
-                viewport={{ margin: "-40px" }}
+                viewport={{ margin: "-40px", once: "true" }}
               >
                 INVESTMENT SOLUTIONS
               </motion.h1>

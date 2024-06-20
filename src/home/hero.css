@@ -15,6 +15,10 @@
     /* position: relative; */
 }
 
+.the_hero_bg{
+    width: 100%;
+}
+
 .hero_writeup{
     width: 100%;
     height: auto;
@@ -29,7 +33,12 @@
     color: white;
     padding: 4px;
     /* background-color: rgba(0, 0, 0, 0.5); */
-    background-color: darkblue;
+    /* background: 
+    linear-gradient(to left, rgba(0, 0, 0, 0.903), rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.707)), 
+    url('../assets/First.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
     /* background-color: yellow; */
 }
 
@@ -85,11 +94,10 @@
 .get_started_btn{
     width: 200px;
     height: 50px;
-    background: orange;
     background: linear-gradient(
-      276deg,
-      rgb(222, 151, 18) 49%,
-      darkblue 100%
+      240deg,
+      gold,
+      black
     );
     color: white;
     font-weight: 500;
