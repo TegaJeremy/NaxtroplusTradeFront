@@ -59,21 +59,25 @@ const Header = () => {
           </div>
           <div className="home-header-wrapper-media">
             <div className="header-mobile-logo-container">
-              {/* <img src={CITADEL} alt="logo" /> */}
+              <img src={naxtrologo} alt="logo" />
             </div>
             <div className="header-burger-menu-container">
               {menu ? (
-                <IoMdClose
-                  onClick={() => {
+                <div className="burger_menu">
+                  <IoMdClose style={{width: '100%', height: '100%'}}
+                    onClick={() => {
                     setMenu(false);
                   }}
                 />
+                </div>
               ) : (
-                <RxHamburgerMenu
-                  onClick={() => {
+                <div className="burger_menu">
+                  <RxHamburgerMenu style={{width: '100%', height: '100%'}}
+                    onClick={() => {
                     setMenu(true);
                   }}
                 />
+                </div>
               )}
             </div>
             {menu ? (

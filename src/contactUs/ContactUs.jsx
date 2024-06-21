@@ -7,7 +7,7 @@ import { GrCompliance } from "react-icons/gr";
 
 function ContactUs() {
   return (
-    <div>
+    <div className={classes.wholecontact}>
       <div className={classes.contactDetailsContainer}>
         <h1 className={classes.contactH1}>
           <span className={classes.contactSpan}>Get in Touch,</span>

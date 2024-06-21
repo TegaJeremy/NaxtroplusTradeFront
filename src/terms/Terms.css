@@ -1,29 +1,14 @@
-/* 
- ///////////////////////////
-
-    GENERAL STYLE
-
-  /////////////////////////
-
-
-*/
-
-/* for all the paragraph details */
+.main{
+  width: 100%;
+  background: 
+    linear-gradient(to left, rgba(0, 0, 0, 0.903), rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.707)), 
+    url('../assets/starbg.jpeg');
+}
 .details {
   font-size: 1rem;
   line-height: 1.5;
-  color: #6a90be;
+  color: whitesmoke;
 }
-
-/* 
- ///////////////////////////
-
-    NORMAL STYLE
-
-  /////////////////////////
-
-
-*/
 
 .header {
   width: 100%;
