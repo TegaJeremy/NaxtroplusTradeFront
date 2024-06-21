@@ -23,7 +23,7 @@ const Terms = () => {
             <h1 className='primary-detail '>Website terms and conditions</h1>
             <p className='details'>
              
-"This website, Citadel Investment, and its contents ("Website") are the exclusive property of Citadel Investment ("Citadel Investment" ®), headquartered at Sheaf Street, Sheffield City Centre, Sheffield S1 2BJ, United Kingdom. Your use of this Website is governed by the following Terms and Conditions ("Terms"). Please review these Terms carefully before accessing or using the Website."
+"This website, Naxtro Trade Plus, and its contents ("Website") are the exclusive property of Naxtro Trade Plus ("Naxtro Trade Plus" ®), headquartered at Sheaf Street, Sheffield City Centre, Sheffield S1 2BJ, United Kingdom. Your use of this Website is governed by the following Terms and Conditions ("Terms"). Please review these Terms carefully before accessing or using the Website."
             </p>
           </div>
         </div>
