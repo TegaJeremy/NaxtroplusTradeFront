@@ -8,7 +8,7 @@ const About = () => {
       <section className="section1About">
         <h1 className="aboutTxtMobil">About Us</h1>
         <p className="aboutTxtMobil">
-          Alpha Forex stands as a prominent global asset manager, renowned for
+          Naxtro Trade Plus stands as a prominent global asset manager, renowned for
           its
           <br className="TextBtreaker1" />
           steadfast and enduring strategy rooted in conviction guides our

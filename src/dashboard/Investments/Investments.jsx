@@ -29,35 +29,35 @@ function Investments() {
 
   const plans = [
     {
-      plan: "Basic",
+      plan: "NAXTRO PLUS STARTER",
       param: "basicPlan",
-      minAmount: "2,000.00",
-      maxAmount: "9,999.00",
-      return: "25.00",
+      minAmount: "5,000.00",
+      maxAmount: "14,999.00",
+      return: "6.23",
       days: 30,
     },
     {
-      plan: "Pro",
+      plan: "NAXTRO PLUS PREMIUM",
       param: "proPlan",
-      minAmount: "10,000.00",
-      maxAmount: "49,999.00",
-      return: "35.00",
+      minAmount: "15,000.00",
+      maxAmount: "24,999.00",
+      return: "6.70",
       days: 30,
     },
     {
-      plan: "Premium",
+      plan: "NAXTRO PLUS ENTERPRISE",
       param: "premiumPlan",
+      minAmount: "25,000.00",
+      maxAmount: "49,999.00",
+      return: "10.63",
+      days: 30,
+    },
+    {
+      plan: "NAXTRO PLUS PRO",
+      param: "retirementPlan",
       minAmount: "50,000.00",
       maxAmount: "99,999.00",
-      return: "50.00",
-      days: 30,
-    },
-    {
-      plan: "Retirement",
-      param: "retirementPlan",
-      minAmount: "100000.00",
-      maxAmount: "unlimited",
-      return: "50.00",
+      return: "15.06",
       days: 100,
     },
   ];
@@ -144,7 +144,7 @@ function Investments() {
                     {plans.return} <span>%</span>
                   </h1>
 
-                  <h1>{plans.plan} Plan</h1>
+                  <h1>{plans.plan} PLAN</h1>
                 </div>
 
                 <div className="investment-card-wrapper-details">
