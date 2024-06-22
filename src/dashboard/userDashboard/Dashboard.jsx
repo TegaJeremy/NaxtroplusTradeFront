@@ -229,7 +229,7 @@ const Dashboard = () => {
                   <div
                     className="select-wrapper"
                     style={{
-                      backgroundColor: "darkblue",
+                      backgroundColor: "black",
                       color: "white",
                       cursor: "pointer",
                       // padding: "0.5rem",
@@ -242,16 +242,16 @@ const Dashboard = () => {
                       multiple
                     >
                       <p value="starter-plan">
-                        <a href="#userDashboard/investment">Basic plan</a>
+                        <a href="/investment">Basic plan</a>
                       </p>
                       <p value="silver-plan">
-                        <a href="#userDashboard/investment">Pro Plan</a>
+                        <a href="/investment">Pro Plan</a>
                       </p>
                       <p value="gold-plan">
-                        <a href="#userDashboard/investment">Premium Plan</a>
+                        <a href="investment">Premium Plan</a>
                       </p>
                       <p value="vip-plan">
-                        <a href="#userDashboard/investment">Retirement Plan</a>
+                        <a href="/investment">Retirement Plan</a>
                       </p>
 
                       {/* <option value="vip-platnium-plan">

@@ -12,24 +12,7 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <section className="footer-section">
-      <motion.div
-        initial={{
-          opacity: 0,
-          x: 100,
-        }}
-        transition={{
-          type: "spring",
-          stiffness: 30,
-          mass: 1.5,
-        }}
-        // animate={{ opacity: 1, y: 0 }}
-        whileInView={{
-          opacity: 1,
-          x: 0,
-          //   delay: stagger(0.05),
-        }}
-        viewport={{ margin: "-10px", once: true }}
-        className="footer-container">
+      <div className="footer-container">
         <div className="company-footer-first">
           <h3 className="footer-h3">Logo</h3>
 
@@ -104,28 +87,11 @@ function Footer() {
             </p>
           </div>
         </div>
-      </motion.div>
+      </div>
 
-      <motion.div
-        initial={{
-          opacity: 0,
-          x: 100,
-        }}
-        transition={{
-          type: "spring",
-          stiffness: 30,
-          mass: 1.5,
-        }}
-        // animate={{ opacity: 1, y: 0 }}
-        whileInView={{
-          opacity: 1,
-          x: 0,
-          //   delay: stagger(0.05),
-        }}
-        viewport={{ margin: "-10px", once: true }}
-        className="copyright">
+      <div className="copyright">
         copyright @2024 naxtro
-      </motion.div>
+      </div>
     </section>
   );
 }

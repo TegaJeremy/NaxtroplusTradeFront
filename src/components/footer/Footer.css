@@ -102,8 +102,56 @@
   gap: 10px;
 }
 
-.footer-contact-container {
+.footer-contact-container{
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+
+
+
+@media screen and (max-width: 800px){
+  .footer-h3{
+    text-align: center;
+  }
+  .footer-letter-spacing{
+    text-align: center;
+  }
+  .footer-message{
+    justify-content: center;
+  }
+  .footer-information{
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-list{
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-links{
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-link{
+    text-align: center;
+  }
+  .footer-contact-container{
+    justify-content: center;
+    text-align: center;
+    /* background-color: green; */
+  }
+  .footer-contact-details{
+    text-align: center;
+    /* background-color: brown; */
+  }
+
+  .footer-form{
+    width: 100%;
+    /* background-color: orange; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
 }

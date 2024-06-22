@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink,useNavigate } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
 import "./Header.css";
@@ -8,6 +8,32 @@ import naxtrologo from "../../assets/naxtrologo.png";
 
 const Header = () => {
   const [menu, setMenu] = useState(false)
+  const navigate = useNavigate()
+
+  const goHome = ()=>{
+    setMenu(false)
+    navigate('/')
+  }
+  const goAbout = ()=>{
+    setMenu(false)
+    navigate('/about')
+  }
+  const goTerms = ()=>{
+    setMenu(false)
+    navigate('/terms')
+  }
+  const goLogin = ()=>{
+    setMenu(false)
+    navigate('/login')
+  }
+  const goContact = ()=>{
+    setMenu(false)
+    navigate('/contact')
+  }
+  const goRegister = ()=>{
+    setMenu(false)
+    navigate('/register')
+  }
 
 
   return (
@@ -83,28 +109,23 @@ const Header = () => {
             {menu ? (
               <div className="header-mobile-menu">
                 <ul>
-                  <li>
-                    <NavLink to='/' className={({ isActive }) => isActive ? 'menuactive' : 'menunotactive'}>Home</NavLink>
+                  <li onClick={goHome}>
+                    <NavLink to='/' className={({ isActive }) => isActive ? 'mobilemenuactive' : 'mobilemenunotactive'}>Home</NavLink>
                   </li>
-                  <li className="navLinks">
-                    <a href="https://vault-investment-project.vercel.app/">
-                      Wallet
-                    </a>
+                  <li onClick={goAbout}>
+                    <NavLink to='/about' className={({ isActive }) => isActive ? 'mobilemenuactive' : 'mobilemenunotactive'}>About Us</NavLink>
                   </li>
-                  <li>
-                    <NavLink to='/about' className={({ isActive }) => isActive ? 'menuactive' : 'menunotactive'}>About Us</NavLink>
+                  <li onClick={goTerms}>
+                    <NavLink to='/terms' className={({ isActive }) => isActive ? 'mobilemenuactive' : 'mobilemenunotactive'}>Terms</NavLink>
                   </li>
-                  <li>
-                    <NavLink to='/terms' className={({ isActive }) => isActive ? 'menuactive' : 'menunotactive'}>Terms</NavLink>
+                  <li onClick={goLogin}>
+                    <NavLink to='/login' className={({ isActive }) => isActive ? 'mobilemenuactive' : 'mobilemenunotactive'}>Login</NavLink>
+                  </li >
+                  <li onClick={goContact}>
+                    <NavLink to='/contact' className={({ isActive }) => isActive ? 'mobilemenuactive' : 'mobilemenunotactive'}>Contact Us</NavLink>
                   </li>
-                  <li>
-                    <NavLink to='/login' className={({ isActive }) => isActive ? 'menuactive' : 'menunotactive'}>Login</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to='/contact' className={({ isActive }) => isActive ? 'menuactive' : 'menunotactive'}>Contact Us</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to='/register' className={({ isActive }) => isActive ? 'menuactive' : 'menunotactive'}>Create Account</NavLink>
+                  <li onClick={goRegister}>
+                    <NavLink to='/register' className={({ isActive }) => isActive ? 'mobilemenuactive' : 'mobilemenunotactive'}>Create Account</NavLink>
                   </li>
                 </ul>
               </div>

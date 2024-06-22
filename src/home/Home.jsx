@@ -202,12 +202,9 @@ const Home = () => {
                 stiffness: 30,
                 mass: 1.5,
               }}
-              // animate={{ opacity: 1, y: 0 }}
               whileInView={{
                 opacity: 1,
                 y: 0,
-
-                //   delay: stagger(0.05),
               }}
               viewport={{ margin: "-40px", once: true }}
               className="section3-Home-mainContainer"
@@ -224,7 +221,7 @@ const Home = () => {
                 and document our value creation
               </p>
               <div className="section4-Home-button">
-                <button onClick={()=>navigate("about")}>ABOUT US</button>
+                <button onClick={()=>navigate("/about")}>ABOUT US</button>
               </div>
             </div>
             <div className="section4-home-imgContainer">
