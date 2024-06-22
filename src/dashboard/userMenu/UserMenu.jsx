@@ -28,7 +28,7 @@ import { toast } from "react-toastify";
 import axios from "axios";
 import DeleteUser from "../DeleteUser/DeleteUser";
 // import citadelLogo from "../../assets/image/citadelLogo.png";
-import citadelLogo from "../../assets/citadel2.png";
+import naxtrologo from "../../assets/naxtrologo.png";
 // import CITADEL from "/CITADEL.png";
 import {
   expireSession,
@@ -249,17 +249,9 @@ const UserMenu = () => {
       <div className="user-dashboard-left-container">
         <div className="user-dashboard-left-body">
           <div className="user-dashboard-left-body-logo">
-            <img src={citadelLogo} alt="citadelLogo" />
+            <img src={naxtrologo} alt="citadelLogo" />
           </div>
           <div className="user-dashboard-acct-balance-container">
-            <h1
-              style={{
-                fontSize: "1.2rem",
-              }}
-            >
-              {" "}
-              Account Balance
-            </h1>
             <div className="user-dashboard-deposit-wallet-container">
               <div className="user-dashboard-deposit-wallet-wrapper">
                 <p>General Balance</p>
@@ -323,9 +315,7 @@ const UserMenu = () => {
                     <MdOutlineDashboard className= "user-dashboard-menu-icon"/>
                   </div>
                   <div className="user-dashboard-menu-dashboard-container-title">
-                    <p>
-                      Dashboard
-                    </p>
+                    Dashboard
                   </div>
                 </div>
             </NavLink>
@@ -336,9 +326,7 @@ const UserMenu = () => {
                     <CgMenuBoxed className= "user-dashboard-menu-investment-icon"/>
                   </div>
                   <div className="user-dashboard-menu-investment-container-title">
-                    <p>
-                      Investment
-                    </p>
+                    Investment
                   </div>
                 </div>
             </NavLink>
@@ -349,9 +337,7 @@ const UserMenu = () => {
                     <IoAlertCircleOutline className= "user-dashboard-menu-deposit-icon"/>
                   </div>
                   <div className="user-dashboard-menu-deposit-container-title">
-                    <p>
-                      Deposit
-                    </p>
+                    Deposit
                   </div>
                 </div>
             </NavLink>
@@ -362,9 +348,7 @@ const UserMenu = () => {
                     <BiMoneyWithdraw className= "user-dashboard-menu-withdraw-icon"/>
                   </div>
                   <div className="user-dashboard-menu-withdraw-container-title">
-                    <p>
-                      Withdraw
-                    </p>
+                    Withdraw
                   </div>
                 </div>
             </NavLink>
@@ -375,9 +359,7 @@ const UserMenu = () => {
                     <GrTransaction className= "user-dashboard-menu-transaction-icon"/>
                   </div>
                   <div className="user-dashboard-menu-transaction-container-title">
-                    <p>
-                      Transaction
-                    </p>
+                    Transaction
                   </div>
                 </div>
             </NavLink>
@@ -388,9 +370,7 @@ const UserMenu = () => {
                     <FaUsers className= "user-dashboard-menu-referral-icon"/>
                   </div>
                   <div className="user-dashboard-menu-referral-container-title">
-                    <p>
-                      referrals
-                    </p>
+                    referrals
                   </div>
                 </div>
             </NavLink>
@@ -401,9 +381,7 @@ const UserMenu = () => {
                     <GrShieldSecurity className= "user-dashboard-menu-twoFA-icon"/>
                   </div>
                   <div className="user-dashboard-menu-twoFA-container-title">
-                    <p>
-                      2FA Security
-                    </p>
+                    2FA Security
                   </div>
                 </div>
             </NavLink>
@@ -414,9 +392,7 @@ const UserMenu = () => {
                     <RiLockPasswordLine className= "user-dashboard-menu-changePassword-icon"/>
                   </div>
                   <div className="user-dashboard-menu-changePassword-container-title">
-                    <p>
-                      Change Password
-                    </p>
+                    Change Password
                   </div>
                 </div>
             </NavLink>
@@ -429,9 +405,7 @@ const UserMenu = () => {
                       <GiMoneyStack className= "user-dashboard-menu-changePassword-icon"/>
                     </div>
                     <div className="user-dashboard-menu-changePassword-container-title">
-                      <p>
-                        Assign Deposit
-                      </p>
+                      Assign Deposit
                     </div>
                   </div>
                 </NavLink>
@@ -442,9 +416,7 @@ const UserMenu = () => {
                       <GiMoneyStack className= "user-dashboard-menu-changePassword-icon"/>
                     </div>
                     <div className="user-dashboard-menu-changePassword-container-title">
-                      <p>
-                        Assign Interest
-                      </p>
+                      Assign Interest
                     </div>
                   </div>
                 </NavLink>
@@ -455,9 +427,7 @@ const UserMenu = () => {
                       <FaUser className= "user-dashboard-menu-changePassword-icon"/>
                     </div>
                     <div className="user-dashboard-menu-changePassword-container-title">
-                      <p>
-                        User Details
-                      </p>
+                      User Details
                     </div>
                   </div>
                 </NavLink>
@@ -468,9 +438,7 @@ const UserMenu = () => {
                       <MdDelete className= "user-dashboard-menu-changePassword-icon"/>
                     </div>
                     <div className="user-dashboard-menu-changePassword-container-title">
-                      <p>
-                        Del/Deactivate User Acc
-                      </p>
+                      Del/Deactivate User Acc
                     </div>
                   </div>
                 </NavLink>
@@ -481,9 +449,7 @@ const UserMenu = () => {
                       <MdDelete className= "user-dashboard-menu-changePassword-icon"/>
                     </div>
                     <div className="user-dashboard-menu-changePassword-container-title">
-                      <p>
-                        Pending KYC
-                      </p>
+                      Pending KYC
                     </div>
                   </div>
                 </NavLink>
@@ -512,24 +478,15 @@ const UserMenu = () => {
       </div>
 
       {menu ? (
-        <div
-          className="user-left-menu-wrapper-media"
-          style={{
-            backgroundColor: "#07122D",
-            color: "orangered",
-            padding: "0 3%",
-            boxShadow: "0 3px 10px rgba(0,0,0,0.1)",
-          }}
-        >
+        <div className="mobile_menu">
+          <div
+          className="user-left-menu-wrapper-media">
           <div className="user-left-menu-logo-wrapper-media">
             <div className="user-left-menu-logo-container-media">
-              <img src={citadelLogo} alt="citadelLogo" />
+              <img src={naxtrologo} alt="citadelLogo" />
             </div>
             <IoMdClose
-              style={{
-                fontSize: "1.2rem",
-                color: "orangered",
-              }}
+              className="close_menu"
               onClick={() => {
                 setMenu(false);
               }}
@@ -537,54 +494,22 @@ const UserMenu = () => {
           </div>
 
           <div className="user-dashboard-acct-balance-container">
-            <h1 style={{ color: "orangered" }}>Account Balance</h1>
-
-            <div
-              className="user-dashboard-deposit-wallet-container"
-              style={{
-                height: "100%",
-                backgroundColor: "#999",
-                maxWidth: "99%",
-
-                marginBottom: "5px",
-                borderRadius: "5px",
-              }}
-            >
+            <div className="user-dashboard-deposit-wallet-container">
               <div className="user-dashboard-deposit-wallet-wrapper">
-                <p
-                  style={{
-                    color: "black",
-                    fontWeight: "500",
-                  }}
-                >
+                <p>
                   General Balance
                 </p>
                 <div className="user-dashboard-deposit-wallet-amount">
                   <h3>
-                    {accountBalance && `${accountBalance}.00`} <span>USD</span>
+                    {accountBalance && `${accountBalance}`}.00 <span>USD</span>
                   </h3>
                 </div>
               </div>
             </div>
 
-            <div
-              className="user-dashboard-deposit-wallet-container"
-              style={{
-                height: "100%",
-                backgroundColor: "#999",
-                maxWidth: "99%",
-
-                marginBottom: "5px",
-                borderRadius: "5px",
-              }}
-            >
+            <div className="user-dashboard-deposit-wallet-container">
               <div className="user-dashboard-deposit-wallet-wrapper">
-                <p
-                  style={{
-                    color: "black",
-                    fontWeight: "500",
-                  }}
-                >
+                <p>
                   Deposit Wallet
                 </p>
                 <div className="user-dashboard-deposit-wallet-amount">
@@ -594,24 +519,9 @@ const UserMenu = () => {
                 </div>
               </div>
             </div>
-            <div
-              className="user-dashboard-deposit-wallet-container"
-              style={{
-                height: "100%",
-                backgroundColor: "#999",
-                maxWidth: "99%",
-
-                marginBottom: "5px",
-                borderRadius: "5px",
-              }}
-            >
+            <div  className="user-dashboard-deposit-wallet-container">
               <div className="user-dashboard-deposit-wallet-wrapper">
-                <p
-                  style={{
-                    color: "black",
-                    fontWeight: "500",
-                  }}
-                >
+                <p>
                   Interest Wallet
                 </p>
                 <div className="user-dashboard-deposit-wallet-amount">
@@ -621,24 +531,9 @@ const UserMenu = () => {
                 </div>
               </div>
             </div>
-            <div
-              className="user-dashboard-deposit-wallet-container"
-              style={{
-                height: "100%",
-                backgroundColor: "#999",
-                maxWidth: "99%",
-                padding: "0.2rem",
-                marginBottom: "5px",
-                borderRadius: "5px",
-              }}
-            >
+            <div className="user-dashboard-deposit-wallet-container">
               <div className="user-dashboard-deposit-wallet-wrapper">
-                <p
-                  style={{
-                    color: "black",
-                    fontWeight: "500",
-                  }}
-                >
+                <p>
                   Referral Wallet
                 </p>
                 <div className="user-dashboard-deposit-wallet-amount">
@@ -658,7 +553,9 @@ const UserMenu = () => {
             }}
           >
             <div className="user-dashboard-left-body-menu">
-              <NavLink to='/dashboard' className={({ isActive }) => isActive ? 'user-dashboard-left-menu-dashboard-active' : 'user-dashboard-left-menu-dashboard'}>
+              <NavLink to='/dashboard' className={({ isActive }) => isActive ? 'user-dashboard-left-menu-dashboard-active' : 'user-dashboard-left-menu-dashboard'} onClick={() => {
+                setMenu(false);
+              }}>
                 <div className="user-dashboard-menu-dashboard-container">
                   <div className="user-dashboard-menu-dashboard-container-icon">
                     <MdOutlineDashboard className= "user-dashboard-menu-icon"/>
@@ -670,7 +567,9 @@ const UserMenu = () => {
                   </div>
                 </div>
               </NavLink>
-              <NavLink to='/investment' className={({ isActive }) => isActive ? 'user-dashboard-left-menu-investment-active' : 'user-dashboard-left-menu-investment'}>
+              <NavLink to='/investment' className={({ isActive }) => isActive ? 'user-dashboard-left-menu-investment-active' : 'user-dashboard-left-menu-investment'} onClick={() => {
+                setMenu(false);
+              }}>
                 <div className="user-dashboard-menu-investment-container">
                   <div className="user-dashboard-menu-investment-container-icon">
                     <CgMenuBoxed className= "user-dashboard-menu-investment-icon"/>
@@ -682,7 +581,9 @@ const UserMenu = () => {
                   </div>
                 </div>
               </NavLink>
-              <NavLink to='/deposit' className={({ isActive }) => isActive ? 'user-dashboard-left-menu-deposit-active' : 'user-dashboard-left-menu-deposit'}>
+              <NavLink to='/deposit' className={({ isActive }) => isActive ? 'user-dashboard-left-menu-deposit-active' : 'user-dashboard-left-menu-deposit'} onClick={() => {
+                setMenu(false);
+              }}>
               <div className="user-dashboard-menu-deposit-container">
                   <div className="user-dashboard-menu-deposit-container-icon">
                     <IoAlertCircleOutline className= "user-dashboard-menu-deposit-icon"/>
@@ -695,7 +596,9 @@ const UserMenu = () => {
                 </div>
             </NavLink>
 
-            <NavLink to='/withdraw' className={({ isActive }) => isActive ? 'user-dashboard-left-menu-withdraw-active' : 'user-dashboard-left-menu-withdraw'}>
+            <NavLink to='/withdraw' className={({ isActive }) => isActive ? 'user-dashboard-left-menu-withdraw-active' : 'user-dashboard-left-menu-withdraw'} onClick={() => {
+                setMenu(false);
+              }}>
               <div className="user-dashboard-menu-withdraw-container">
                   <div className="user-dashboard-menu-withdraw-container-icon">
                     <BiMoneyWithdraw className= "user-dashboard-menu-withdraw-icon"/>
@@ -708,7 +611,9 @@ const UserMenu = () => {
                 </div>
             </NavLink>
 
-            <NavLink to='/transaction' className={({ isActive }) => isActive ? 'user-dashboard-left-menu-transaction-active' : 'user-dashboard-left-menu-transaction'}>
+            <NavLink to='/transaction' className={({ isActive }) => isActive ? 'user-dashboard-left-menu-transaction-active' : 'user-dashboard-left-menu-transaction'} onClick={() => {
+                setMenu(false);
+              }}>
               <div className="user-dashboard-menu-transaction-container">
                   <div className="user-dashboard-menu-transaction-container-icon">
                     <GrTransaction className= "user-dashboard-menu-transaction-icon"/>
@@ -720,7 +625,9 @@ const UserMenu = () => {
                   </div>
                 </div>
             </NavLink>
-            <NavLink to='/changepassword' className={({ isActive }) => isActive ? 'user-dashboard-left-menu-changePassword-active' : 'user-dashboard-left-menu-changePassword'}>
+            <NavLink to='/changepassword' className={({ isActive }) => isActive ? 'user-dashboard-left-menu-changePassword-active' : 'user-dashboard-left-menu-changePassword'} onClick={() => {
+                setMenu(false);
+              }}>
               <div className="user-dashboard-menu-changePassword-container">
                   <div className="user-dashboard-menu-changePassword-container-icon">
                     <RiLockPasswordLine className= "user-dashboard-menu-changePassword-icon"/>
@@ -734,7 +641,9 @@ const UserMenu = () => {
             </NavLink>
               {AdminUser.isAdmin ? (
                 <>
-                  <NavLink to='/assignmoney' className={({ isActive }) => isActive ? 'user-dashboard-left-menu-changePassword-active' : 'user-dashboard-left-menu-changePassword'}>
+                  <NavLink to='/assignmoney' className={({ isActive }) => isActive ? 'user-dashboard-left-menu-changePassword-active' : 'user-dashboard-left-menu-changePassword'} onClick={() => {
+                setMenu(false);
+              }}>
                   <div className="user-dashboard-menu-changePassword-container">
                     <div className="user-dashboard-menu-changePassword-container-icon">
                       <GiMoneyStack className= "user-dashboard-menu-changePassword-icon"/>
@@ -747,7 +656,9 @@ const UserMenu = () => {
                   </div>
                 </NavLink>
 
-                <NavLink to='/assignprofit' className={({ isActive }) => isActive ? 'user-dashboard-left-menu-changePassword-active' : 'user-dashboard-left-menu-changePassword'}>
+                <NavLink to='/assignprofit' className={({ isActive }) => isActive ? 'user-dashboard-left-menu-changePassword-active' : 'user-dashboard-left-menu-changePassword'} onClick={() => {
+                setMenu(false);
+              }}>
                   <div className="user-dashboard-menu-changePassword-container">
                     <div className="user-dashboard-menu-changePassword-container-icon">
                       <GiMoneyStack className= "user-dashboard-menu-changePassword-icon"/>
@@ -760,7 +671,9 @@ const UserMenu = () => {
                   </div>
                 </NavLink>
 
-                <NavLink to='/user-details' className={({ isActive }) => isActive ? 'user-dashboard-left-menu-changePassword-active' : 'user-dashboard-left-menu-changePassword'}>
+                <NavLink to='/user-details' className={({ isActive }) => isActive ? 'user-dashboard-left-menu-changePassword-active' : 'user-dashboard-left-menu-changePassword'} onClick={() => {
+                setMenu(false);
+              }}>
                   <div className="user-dashboard-menu-changePassword-container">
                     <div className="user-dashboard-menu-changePassword-container-icon">
                       <FaUser className= "user-dashboard-menu-changePassword-icon"/>
@@ -773,7 +686,9 @@ const UserMenu = () => {
                   </div>
                 </NavLink>
 
-                <NavLink to='/delete-user' className={({ isActive }) => isActive ? 'user-dashboard-left-menu-changePassword-active' : 'user-dashboard-left-menu-changePassword'}>
+                <NavLink to='/delete-user' className={({ isActive }) => isActive ? 'user-dashboard-left-menu-changePassword-active' : 'user-dashboard-left-menu-changePassword'} onClick={() => {
+                setMenu(false);
+              }}>
                   <div className="user-dashboard-menu-changePassword-container">
                     <div className="user-dashboard-menu-changePassword-container-icon">
                       <MdDelete className= "user-dashboard-menu-changePassword-icon"/>
@@ -786,7 +701,9 @@ const UserMenu = () => {
                   </div>
                 </NavLink>
 
-                <NavLink to='/pending-kyc' className={({ isActive }) => isActive ? 'user-dashboard-left-menu-changePassword-active' : 'user-dashboard-left-menu-changePassword'}>
+                <NavLink to='/pending-kyc' className={({ isActive }) => isActive ? 'user-dashboard-left-menu-changePassword-active' : 'user-dashboard-left-menu-changePassword'} onClick={() => {
+                setMenu(false);
+              }}>
                   <div className="user-dashboard-menu-changePassword-container">
                     <div className="user-dashboard-menu-changePassword-container-icon">
                       <MdDelete className= "user-dashboard-menu-changePassword-icon"/>
@@ -810,6 +727,7 @@ const UserMenu = () => {
               </div>
             </div>
           </div>
+        </div>
         </div>
       ) : null}
       <div className="user-dashboard-right-container">

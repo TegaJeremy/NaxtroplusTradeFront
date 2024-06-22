@@ -43,21 +43,8 @@ function Deposit() {
                 <span onClick={viewHistory}>View Deposit History</span>
               </div>
               <div className="deposit_Card">
-                <section
-                  className="top_DepCard"
-                  style={{
-                    margin: "1rem 0",
-                    /* height: 30%; */
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "flex-start",
-                    /* justify-content: space-evenly; */
-                    gap: "2rem",
-                    fontSize: "1rem",
-                    color: "white",
-                  }}
-                >
-                  <span>Select gateway</span>
+                <section className="top_DepCard">
+                  <span>Select gateway :</span>
                   <select
                     onChange={(e) => {
                       setGate(e.target.value);

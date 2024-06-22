@@ -14,23 +14,27 @@
 
 .user-dashboard-left-container {
   width: 22%;
-  height: 100%;
-  background: #000;
+  height: 100vh;
+  background: black;
   display: flex;
   justify-content: center;
-  border-right: 1px solid rgb(222, 219, 219);
-  overflow-y: scroll;
+  border-right: 1px solid gold;
 }
 
 .user-dashboard-left-body {
   width: 90%;
   height: 100%;
   /* background: cyan; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  overflow-y: auto;
 }
 
 .user-dashboard-left-body-logo {
-  /* width: 100%; */
-  height: 7vh;
+  width: 100px;
+  height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,12 +42,13 @@
   display: flex;
   justify-content: center;
   align-content: center;
+  margin-bottom: 20px;
 }
 
 .user-dashboard-left-body-logo img {
-  /* width: 30%;
-  height: 80%; */
-  max-width: 15rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .user-dashboard-acct-balance-container {
@@ -57,8 +62,7 @@
   box-shadow: rgba(207, 150, 69, 0.2) 0px 0px 2px 0px,
     rgba(207, 150, 69 0.12) 0px 12px 24px -4px;
   /* border: 0.5px solid #cd9948; */
-
-  margin-bottom: 2rem;
+  margin-bottom: 10px;
 }
 
 .user-dashboard-acct-balance-container h1 {
@@ -70,10 +74,10 @@
 .user-dashboard-deposit-wallet-container {
   width: 100%;
   /* height: 20%; */
-  background: #f0d9b36d;
+  background: rgb(42, 42, 91);
   display: flex;
   align-items: center;
-  padding: .5rem;
+  padding: 0.5rem;
   justify-content: center;
   border-radius: 10px;
 }
@@ -86,15 +90,20 @@
   flex-direction: column;
   justify-content: space-evenly;
   color: #fff;
+  gap: 5px;
 }
 
 .user-dashboard-deposit-wallet-wrapper p {
   color: rgb(158, 158, 158);
+  font-size: 15px;
+}
+.user-dashboard-deposit-wallet-amount h3{
+  font-size: 15px;
 }
 
 .user-dashboard-deposit-withdraw-btn-wrapper {
   width: 100%;
-  height: 20%;
+  height: 60px;
   /* background: red; */
   display: flex;
   align-items: center;
@@ -109,13 +118,23 @@
   cursor: pointer;
   font-size: 16px;
 }
+.user-dashboard-deposit-withdraw-btn-wrapper button:hover{
+  background-color: rgb(244, 208, 5);
+  color: white;
+}
+.user-dashboard-deposit-withdraw-btn-wrapper button:active{
+  background-color: #cd9948;
+}
 
 .user-dashboard-left-body-menu {
   width: 100%;
-  height: 67vh;
+  height: auto;
   /* background: yellow; */
-  /* overflow: auto; */
   overflow-y: scroll;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .user-dashboard-left-menu-title {
@@ -144,7 +163,7 @@
 .user-dashboard-left-menu-twoFA,
 .user-dashboard-left-menu-changePassword {
   width: 100%;
-  height: 7vh;
+  height: 50px;
   /* background: rgb(255, 255, 255); */
   display: flex;
   align-items: center;
@@ -167,12 +186,12 @@
 .user-dashboard-left-menu-twoFA-active,
 .user-dashboard-left-menu-changePassword-active {
   width: 100%;
-  height: 7vh;
-  background: orangered;
+  height: 50px;
+  background: gold;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: black;
   border-radius: 6px;
 }
 
@@ -191,11 +210,10 @@
 .user-dashboard-menu-twoFA-container,
 .user-dashboard-menu-changePassword-container {
   width: 90%;
-  /* height: 80%; */
+  height: 50px;
   /* background: rgb(117,16,246); */
   display: flex;
   align-items: center;
-  transition: 3s;
 }
 
 .user-dashboard-left-menu-dashboard:hover,
@@ -296,65 +314,33 @@
   color: orangered;
 }
 
-.user-dashboard-menu-dashboard-container-title,
-.user-dashboard-menu-investment-container-title,
-.user-dashboard-menu-scheduleInvestment-container-title,
-.user-dashboard-menu-deposit-container-title,
-.user-dashboard-menu-withdraw-container-title,
-.user-dashboard-menu-transaction-container-title,
-.user-dashboard-menu-referral-container-title,
-.user-dashboard-menu-supportTicket-container-title,
-.user-dashboard-menu-twoFA-container-title,
-.user-dashboard-menu-changePassword-container-title {
-  display: flex;
-  align-items: center;
-}
 
-
-.user-dashboard-menu-dashboard-container-titleP-active,
-.user-dashboard-menu-investment-container-titleP-active,
-.user-dashboard-menu-scheduleInvestment-container-titleP-active,
-.user-dashboard-menu-deposit-container-titleP-active,
-.user-dashboard-menu-withdraw-container-titleP-active,
-.user-dashboard-menu-transaction-container-titleP-active,
-.user-dashboard-menu-referral-container-titleP-active,
-.user-dashboard-menu-supportTicket-container-titleP-active,
-.user-dashboard-menu-twoFA-container-titleP-active,
-.user-dashboard-menu-changePassword-container-titleP-active {
-  color: rgb(255, 255, 255);
-  font-size: 14px;
-}
-
-.user-dashboard-menu-transaction-container-titleP-active:active {
-  color: wheat;
-  background-color: orangered;
-}
 
 .user-dashboard-left-menu-logout {
   width: 100%;
-  height: 25%;
+  height: 45px;
   /* background: fuchsia; */
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .user-dashboard-logout-btn {
   width: 88%;
-  /* height: 42%; */
+  height: 100%;
   padding: 0.4rem 0.8rem;
-  border: 1px solid rgb(250, 137, 107);
+  border: 1px solid gold;
   border-radius: 8px;
   background: none;
-  color: rgb(250, 137, 107);
-  font-size: 14px;
+  color: gold;
+  font-size: 17px;
   cursor: pointer;
   font-weight: 500;
-  transition: background 0.5s;
 }
 
 .user-dashboard-logout-btn:hover {
-  background: rgb(250, 137, 107);
+  background: gold;
   color: white;
 }
 
@@ -391,4 +377,8 @@
 
 .user-left-container-media {
   display: none;
+}
+
+.user-dashboard-menu-dashboard-container-title > p{
+  text-decoration: none !important;
 }

@@ -123,7 +123,7 @@ const Withdraw = () => {
                   Amount<span style={{ color: "rgb(226, 5, 5)" }}>*</span>
                 </p>
                 <div className="btc_amount_wrapper">
-                  <div>USD</div>
+                  {/* <p>USD</p> */}
                   <input
                     onChange={(e) => setUsd(e.target.value)}
                     type="number"
@@ -157,7 +157,6 @@ const Withdraw = () => {
                   Amount<span style={{ color: "rgb(226, 5, 5)" }}>*</span>
                 </p>
                 <div className="btc_amount_wrapper">
-                  <div>USD</div>
                   <input
                     onChange={(e) => setUsd(e.target.value)}
                     type="number"
@@ -205,7 +204,6 @@ const Withdraw = () => {
                   Amount<span style={{ color: "rgb(226, 5, 5)" }}>*</span>
                 </p>
                 <div className="bank_amt_wrapper">
-                  <div>USD</div>
                   <input
                     type="number"
                     className="bank_amt_input"

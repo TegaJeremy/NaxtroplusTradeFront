@@ -97,55 +97,47 @@
 .dashboard-coin-balance-card-up,
 .dashboard-coin-balance-card-down {
   width: 40%;
-  height: 90%;
+  height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 10px;
   /* gap: 15px;
   padding: 5px; */
   /* background: yellow; */
   border-radius: 6px;
-  box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px,
-    rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+  box-shadow: gold 0px 0px 2px 0px,
+    gold 0px 5px 20px -4px;
 }
 
-.dashboard-total-deposit-wrapper {
-  /* background: yellow; */
-  display: flex;
-  align-items: center;
-}
 
 .dashboard-total-deposit-wrapper-up-wrapper,
 .dashboard-total-deposit-wrapper-down-wrapper {
   width: 100%;
-  height: 60%;
+  height: 100%;
   /* background-color: purple; */
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.dashboard-total-deposit-wrapper-up-wrapper-icon-holder {
-  height: 100%;
-  width: 25%;
+.dashboard-total-deposit-wrapper-up-wrapper-icon-holder,
+.dashboard-total-deposit-wrapper-down-wrapper-icon-holder {
+  height: 80%;
+  width: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 110% 150% 100% 120%/100% 170% 90% 130%;
-  background: #58c7c5;
   border-radius: 500rem;
   padding: 0.7rem;
 }
+.dashboard-total-deposit-wrapper-up-wrapper-icon-holder{
+  background: #58c7c5;
+}
 .dashboard-total-deposit-wrapper-down-wrapper-icon-holder {
-  height: 100%;
-  width: 25%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 110% 150% 100% 120%/100% 170% 90% 130%;
   background: #cd9948;
-  border-radius: 500rem;
-  padding: 0.7rem;
 }
 
 .dashboard-total-deposit-wrapper-up-wrapper-icon,
@@ -169,6 +161,10 @@
 .dashboard-total-deposit-wrapper-down-wrapper-title-h3 {
   font-weight: lighter;
   font-size: 0.91rem;
+}
+.dashboard-total-deposit-wrapper-up-wrapper-title-amount,
+.dashboard-total-deposit-wrapper-down-wrapper-title-amount{
+  font-size: 1rem;
 }
 
 .profit-calculator-container {

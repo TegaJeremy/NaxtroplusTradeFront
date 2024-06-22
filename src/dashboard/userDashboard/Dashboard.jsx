@@ -189,7 +189,6 @@ const Dashboard = () => {
           </div>
           <div className="dashboard-balance-and-profit-holder">
             <div className="dashboard-coin-balance-card-up">
-              <div className="dashboard-total-deposit-wrapper">
                 <div className="dashboard-total-deposit-wrapper-up-wrapper">
                   <span className="dashboard-total-deposit-wrapper-up-wrapper-icon-holder">
                     <FaWallet className="dashboard-total-deposit-wrapper-up-wrapper-icon" />
@@ -203,10 +202,8 @@ const Dashboard = () => {
                     </h2>
                   </div>
                 </div>
-              </div>
             </div>
             <div className="dashboard-coin-balance-card-down">
-              <div className="dashboard-total-deposit-wrapper">
                 <div className="dashboard-total-deposit-wrapper-down-wrapper">
                   <span className="dashboard-total-deposit-wrapper-down-wrapper-icon-holder">
                     <FaCoins className="dashboard-total-deposit-wrapper-down-wrapper-icon" />
@@ -220,7 +217,6 @@ const Dashboard = () => {
                     </h2>
                   </div>
                 </div>
-              </div>
             </div>
           </div>
           <div className="profit-calculator-container">
