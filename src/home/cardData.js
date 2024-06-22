@@ -53,16 +53,16 @@ export const cardData = [
     Roi: "15.06% Return Everyday",
     button: "INVEST NOW",
   },
-  // {
-  //   id: 5,
-  //   image: investmentIcon3, // Remove the curly braces
-  //   name: "NAXTRO PLUS ULTIMATE PLAN",
-  //   duration: "50% 30 day",
-  //   Minimum: "$50000",
-  //   Maximum: "$100000",
-  //   Principal: "Included In Profit",
-  //   Payout: "Every Calendar Day",
-  //   Roi: "50% Return Everyday",
-  //   button: "INVEST NOW",
-  // },
+  {
+    id: 5,
+    image: investmentIcon3,
+    name: "NAXTRO PLUS ULTIMATE PLAN",
+    duration: "50% 30 day",
+    Minimum: "$50000",
+    Maximum: "$100000",
+    Principal: "Included In Profit",
+    Payout: "Every Calendar Day",
+    Roi: "20.16% Return Everyday",
+    button: "INVEST NOW",
+  },
 ];

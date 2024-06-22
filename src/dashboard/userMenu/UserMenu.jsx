@@ -248,7 +248,7 @@ const UserMenu = () => {
     <div className="user-dashboard-body">
       <div className="user-dashboard-left-container">
         <div className="user-dashboard-left-body">
-          <div className="user-dashboard-left-body-logo">
+          <div className="user-dashboard-left-body-logo" onClick={()=>navigate("/")} >
             <img src={naxtrologo} alt="citadelLogo" />
           </div>
           <div className="user-dashboard-acct-balance-container">

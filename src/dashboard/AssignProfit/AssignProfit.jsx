@@ -11,7 +11,7 @@ import { expireSession } from "../../Redux/State";
 
 const AssignProfit = () => {
   const [profit, setProfit] = useState(0);
-  const [userId, setUserId] = useState("");
+  const [identifier, setIdentifier] = useState("");
   const [loading, setLoading] = useState(false);
   const Adminuser = useSelector((state) => state.BTC.userRes);
   const { token } = useSelector((state) => state.BTC.user);
@@ -24,7 +24,7 @@ const AssignProfit = () => {
     try {
       const response = await axios.post(
         `https://naxtrotrade.onrender.com/assignProfit`,
-        { userId, profit },
+        { identifier, profit },
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -77,13 +77,13 @@ const AssignProfit = () => {
             <div className="new-confirm-password-container">
               <div className="new-password-container">
                 <label htmlFor="">
-                  User Id<span style={{ color: "red" }}>*</span>
+                  User Id or Email<span style={{ color: "red" }}>*</span>
                 </label>
                 <input
-                  onChange={(e) => setUserId(e.target.value)}
-                  value={userId}
+                  onChange={(e) => setIdentifier(e.target.value)}
+                  value={identifier}
                   type="text"
-                  placeholder="User Id"
+                  placeholder="User Id or Email"
                   className="dashboard-new-password-input"
                 />
               </div>

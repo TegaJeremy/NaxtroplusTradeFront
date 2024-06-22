@@ -23,8 +23,11 @@ import tetherusdttrc20token from "../assets/tetherusdttrc20token.gif";
 import { motion, stagger } from "framer-motion";
 import citadel1 from "../assets/citadel1.png";
 import Hero from "./Hero";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+
+  const navigate = useNavigate()
   // const [widgetLoaded, setWidgetLoaded] = useState(false);
   // useEffect(() => {
   //     const script = document.createElement('script');
@@ -221,7 +224,7 @@ const Home = () => {
                 and document our value creation
               </p>
               <div className="section4-Home-button">
-                <button>ABOUT US</button>
+                <button onClick={()=>navigate("about")}>ABOUT US</button>
               </div>
             </div>
             <div className="section4-home-imgContainer">

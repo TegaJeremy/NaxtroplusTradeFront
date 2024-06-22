@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
+import './UserDetails.css'
 
 function UserDetails() {
   const [loading, setLoading] = useState(true);
@@ -70,48 +71,24 @@ function UserDetails() {
                 <dialog
                   key={`modal_dialog_${index}`}
                   id={`my_modal_${index}`}
-                  className="modal modal-middle  "
+                  className="dialog"
                 >
-                  <div className="modal-box text-[orangered] bg-[#141414] mt-2">
-                    <h3 className="font-bold text-lg">
-                      Name: {user.firstName} {user.lastName}
-                    </h3>
-                    <p className="mt-2">Email: {user.email}</p>
-                    <p className="mt-2">Id: {user._id}</p>
-                    <p className="mt-2">Address: {user.address}</p>
-                    <p className="mt-2">Mobile Number: {user.mobile}</p>
-                    <p className="mt-2">
-                      Account Balance : {user.accountBalance} USD
-                    </p>
-                    <p className="mt-2">
-                      Deposit Wallet: {user.depositWallet} USD
-                    </p>
-                    <p className="mt-2">
-                      Referral Wallet: {user.referalWallet} USD
-                    </p>
-                    <p className="mt-2">
-                      Interest Wallet: {user.intrestWallet} USD
-                    </p>
-                    {/* <p className="mt-2">
-                      Admin: {user.isAdmin ? "true" : "false"}
-                    </p> */}
-                    <p className="mt-2">
-                      Verified: {user.isVerified ? "true" : "false"}
-                    </p>
-
-                    <p className="mt-2">
-                      Created: {new Date(user.createdAt).toDateString()}{" "}
-                    </p>
-
-                    <div className="modal-action">
-                      <form method="dialog">
-                        {/* if there is a button in form, it will close the modal */}
-                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-[white]">
-                          ✕
-                        </button>
-                      </form>
-                    </div>
-                  </div>
+                    <h3><span>Name: </span> {user.firstName} {user.lastName}</h3>
+                    <p><span>Email:</span> {user.email}</p>
+                    <p><span>Id:</span> {user._id}</p>
+                    <p><span>Address:</span> {user.address}</p>
+                    <p><span>Mobile Number:</span> {user.mobile}</p>
+                    <p><span>Account Balance :</span> {user.accountBalance} USD</p>
+                    <p><span>Deposit Wallet:</span> {user.depositWallet} USD</p>
+                    <p><span>Referral Wallet:</span> {user.referalWallet} USD</p>
+                    <p><span>Interest Wallet:</span> {user.intrestWallet} USD</p>
+                    <p><span>Verified:</span> {user.isVerified ? "true" : "false"}</p>
+                    <p><span>Created:</span> {new Date(user.createdAt).toDateString()}{" "}</p>
+                    <form method="dialog">
+                      <button className="dialog_btn cancel">
+                        ✕
+                      </button>
+                    </form> 
                 </dialog>
               </td>
             </tr>

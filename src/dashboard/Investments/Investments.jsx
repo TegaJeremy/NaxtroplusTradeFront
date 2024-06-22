@@ -58,7 +58,15 @@ function Investments() {
       minAmount: "50,000.00",
       maxAmount: "99,999.00",
       return: "15.06",
-      days: 100,
+      days: 30,
+    },
+    {
+      plan: "NAXTRO Ultimate",
+      param: "ultimatePlan",
+      minAmount: "100,000.00",
+      maxAmount: "100,000,000.00",
+      return: "20.16",
+      days: 30,
     },
   ];
   function PreInvestFunction(type) {

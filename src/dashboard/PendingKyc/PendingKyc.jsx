@@ -189,60 +189,51 @@ function PendingKyc() {
                       <dialog
                         key={`modal_dialog_${index}`}
                         id={`my_modal_${index}`}
-                        className="modal modal-middle  "
+                        className="dialogkyc"
                       >
-                        <div className="modal-box text-[orangered] bg-[#141414] mt-2">
-                          <h3 className="font-bold text-lg">
-                            Name: {transaction.fullName}
+                          <h3>
+                            <span>Name:</span> {transaction.fullName}
                           </h3>
-                          <p className="mt-2">gender: {transaction.gender}</p>
-                          <p className="mt-2">SSN: {transaction.SSN}</p>
-                          <p className="mt-2">
-                            occupation: {transaction.occupation}
+                          <p><span>gender:</span> {transaction.gender}</p>
+                          <p><span>SSN:</span> {transaction.SSN}</p>
+                          <p>
+                            <span>occupation:</span> {transaction.occupation}
                           </p>
 
-                          <div className="mt-3 flex flex-col items-center gap-2 max-width-[50rem]">
+                          <div className="modal_image">
                             Driver's License
                             {transaction.driversLicense &&
                               transaction.driversLicense.map(
                                 (img, imgIndex) => (
-                                  <div key={`modal_img_${index}_${imgIndex}`}>
+                                  <div key={`modal_img_${index}_${imgIndex}`} className="the_modal_image">
                                     <img
                                       src={img.url}
                                       alt={img}
-                                      style={{
-                                        width: "20rem",
-                                      }}
                                     />
                                   </div>
                                 )
                               )}
                           </div>
 
-                          <div className="mt-3 flex gap-2 flex-wrap min-width-[fit-content]">
+                          <div className="modal_btns">
                             <button
                               onClick={() => rejectKyc(transaction._id)}
-                              className="p-2 text-[white] bg-[red] text-[1rem] rounded-md"
+                              className="dialog_btn reject"
                             >
                               Reject
                             </button>
                             <button
                               onClick={() => approveKyc(transaction._id)}
-                              className="p-2 text-[white] bg-[green] text-[1rem] rounded-md"
+                              className="dialog_btn accept"
                             >
                               Accept
                             </button>
                           </div>
-
-                          <div className="modal-action">
-                            <form method="dialog">
-                              {/* if there is a button in form, it will close the modal */}
-                              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-[white]">
-                                ✕
-                              </button>
-                            </form>
-                          </div>
-                        </div>
+                          <form method="dialog">
+                            <button className="dialog_btn cancel">
+                              ✕
+                            </button>
+                          </form>
                       </dialog>
                     </td>
                   </tr>
