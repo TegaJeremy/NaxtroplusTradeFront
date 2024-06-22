@@ -1,4 +1,4 @@
-@media only screen and (min-width: 320px) and (max-width: 576px) {
+@media only screen and (min-width: 320px) and (max-width: 900px) {
 
     .Withdraw_Btn button {
         width: 20%;
@@ -11,6 +11,20 @@
         outline: none;
         cursor: pointer;
         background: purple;
+    }
+
+    .bank_transfer_div{
+        padding: 0px 10px 0px 10px;
+    }
+
+    .bank_name_div{
+        width: 100%;
+    }
+    .bank_amt_div{
+        width: 100%;
+    }
+    .btc_proceed_to_withdraw_btn{
+        width: 100%;
     }
 
 }

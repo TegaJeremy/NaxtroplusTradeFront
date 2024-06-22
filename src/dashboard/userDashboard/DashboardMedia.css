@@ -77,17 +77,15 @@
 
   .dashboard-coin-balance-card-up,
   .dashboard-coin-balance-card-down {
-    width: 90%;
-    /* height: 48%; */
+    width: 100%;
     display: block;
     flex-direction: column;
-    gap: 15px;
-    padding: 5px;
-    /* background: yellow; */
-    border-radius: 6px;
-    box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px,
-      rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
   }
+
+  .dashboard-total-deposit-wrapper-up-wrapper-icon-holder,
+.dashboard-total-deposit-wrapper-down-wrapper-icon-holder{
+  height: 72%;
+}
 
   .profit-calculator-container {
     width: 100%;
