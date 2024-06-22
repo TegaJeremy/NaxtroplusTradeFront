@@ -31,24 +31,53 @@
   }
 
   .header-mobile-menu {
-    width: 50%;
-    height: 30vh;
+    width: 100%;
+    height: 85vh;
     background: #ffff;
     position: absolute;
     top: 100%;
-    right: 0;
+    left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: slideIn 350ms ease-in-out;
   }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
 
   .header-mobile-menu ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    gap: 15px;
+    /* justify-content: space-evenly; */
     height: 100%;
     width: 80%;
+    /* background-color: red; */
+  }
+
+  .header-mobile-menu ul li{
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    padding: 20px 0px 20px 0px;
+    /* background-color: yellow; */
+  }
+
+  .mobilemenuactive{
+    padding: 15px 15px 15px 15px;
+    background-color: black;
+    color: white;
+  }
+  .mobilemenunotactive{
+    color: gold;
   }
 
   .header-mobile-menu ul a {
