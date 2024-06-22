@@ -2,8 +2,12 @@ import React from "react";
 import "./CardPlan.css";
 import "./CardPlanMedia.css";
 import { cardData } from "./cardData";
+import { useNavigate } from "react-router-dom";
 
 const CardPlan = () => {
+
+  const navigate = useNavigate()
+
   return (
     <>
       {cardData.map((item) => (
@@ -30,7 +34,7 @@ const CardPlan = () => {
                 <h5>{item.Roi}</h5>
               </div>
               <div className="CardPlan-CTA">
-                <button onClick={item.url}>{item.button}</button>
+                <button onClick={()=>navigate("/login")}>{item.button}</button>
               </div>
             </div>
           </div>

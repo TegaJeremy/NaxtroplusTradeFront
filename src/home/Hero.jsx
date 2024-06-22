@@ -6,10 +6,12 @@ import "./hero.css";
 import First from "../assets/First.jpg";
 import Second from "../assets/Second.webp";
 import Third from "../assets/Third.webp";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
   
   const [currentSlide, setCurrentSlide] = useState(0);
+  const navigate = useNavigate()
 
 
   useEffect(() => {
@@ -112,7 +114,7 @@ const Hero = () => {
             })()}
             <p>{Context[currentSlide].SubHeaderText}</p>
             <div className="button_part">
-              <button className="get_started_btn">Invest Now</button>
+              <button className="get_started_btn" onClick={()=>navigate("/login")}>Invest Now</button>
             </div>
             <div className="counter-container">
               <div className="counter">

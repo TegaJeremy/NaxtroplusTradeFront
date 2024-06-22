@@ -196,7 +196,9 @@
   height: auto;
   /* background-color: blue; */
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
 }
 
 .section4_Home {
