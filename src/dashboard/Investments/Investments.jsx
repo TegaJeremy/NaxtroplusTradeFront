@@ -189,7 +189,7 @@ function Investments() {
               <section className="ConfirmInvestment_Card">
                 <div className="Confirm_Header">
                   <span>
-                    Investmet Confirmation for{" "}
+                    Investment Confirmation for{" "}
                     <span style={{ color: "Gold" }}>
                       {selectedPlan?.plan} Plan
                     </span>

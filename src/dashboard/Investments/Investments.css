@@ -29,7 +29,7 @@
   /* width: 15%;
   height: 80%; */
   padding: 0.5rem 1rem;
-  background: purple;
+  background: rgb(23, 23, 86);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,16 +48,18 @@
   flex-wrap: wrap;
   /* overflow-y: auto; */
   margin-bottom: 6rem;
+  /* background-color: red; */
 }
 
 .Investment_Card {
   /* width: 13rem;
   height: 80%; */
   /* padding: 2rem; */
-  max-width: 15rem;
+  max-width: 18rem;
   border-radius: 10px;
-  background-color: grey;
+  background-color: rgba(0, 0, 0, 0.575);
   transition: transform 0.3s ease-in-out;
+  border: 2px solid gold;
 }
 
 .Investment_Card:hover {
@@ -68,11 +70,11 @@
   /* width: 100%;
   height: 40%; */
   padding: 2rem;
-  background-image: linear-gradient(to bottom right, goldenrod, purple);
+  background-image: linear-gradient(to bottom right, rgba(228, 167, 13, 0.309), rgba(33, 5, 33, 0.268));
   color: white;
   flex-direction: column;
   /* justify-content: space-evenly; */
-  gap: 0.6rem;
+  gap: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,18 +130,24 @@
   padding: 1rem 2rem;
   outline: none;
   cursor: pointer;
-  background: white;
-  color: black;
+  color: white;
   font-size: 15px;
   font-weight: bold;
   border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  background: linear-gradient(
+    240deg,
+    gold,
+    black
+    );
 }
 
-.BotInvestment_Card article button:hover {
+/* .BotInvestment_Card article button:hover {
   background: purple;
   color: white;
   transition: all 350ms;
-}
+} */
 
 .ConfirmInvestment_CardBody {
   width: 100%;
@@ -154,11 +162,12 @@
 }
 
 .ConfirmInvestment_Card {
-  padding-bottom: 3rem;
+  padding: 2rem;
   /* width: 80%;
   height: 80%; */
   border-radius: 5px;
-  background-image: linear-gradient(to bottom right, #403f44, #1e1b32);
+  background: linear-gradient(to bottom right, #242426, #000000);
+  border: 2px solid rgb(2, 2, 100);
   /* background: black; 
   */
 
@@ -187,6 +196,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
+  /* background-color: yellow; */
 }
 
 .ConfirmInv_Inputs {
@@ -194,8 +204,9 @@
   display: flex;
   /* flex: 0 1 500%; */
   flex-wrap: wrap;
+  padding: 20px;
   gap: 10px;
-
+  /* background-color: red; */
   display: grid;
   justify-items: center;
   align-items: center;
@@ -314,7 +325,7 @@
   outline: none;
   border: none;
   cursor: pointer;
-  background: purple;
+  background: rgb(2, 2, 100);
   font-weight: bold;
 }
 
@@ -327,7 +338,7 @@
   outline: none;
   border: none;
   cursor: pointer;
-  background: purple;
+  background: rgb(3, 3, 87);
   font-weight: bold;
 }
 
@@ -347,18 +358,43 @@
   color: white;
 }
 
-.ConfirmSubmit_Btn:hover {
-  background: rgb(242, 17, 242);
-  transition: all 350ms;
+
+@media screen and (max-width: 900px){
+
+  .ConfirmInvestment_Card {
+    padding: 2rem;  
+  }
+
+  .Confirm_Header {
+    padding: 1rem 0rem;
+    font-size: 1.1rem;
+    line-height: 26px;
+    /* background-color: red; */
+  }
+  
 }
 
-.ConfirmClose_Btn_Later:hover {
-  background: grey;
-  transition: all 350ms;
-  color: white;
+
+
+@media screen and (max-width: 380px){
+
+  .ConfirmInvestment_CardBody{
+    margin-top: 40px;
+  }
+  .ConfirmInvestment_Card{
+    padding: 1rem;
+  }
+  
 }
 
-.ConfirmSubmit_Btn_Later:hover {
-  background: rgb(242, 17, 242);
-  transition: all 350ms;
+
+@media screen and (max-width: 330px){
+
+  .ConfirmInvestment_CardBody{
+    margin-top: 80px;
+  }
+  .ConfirmInvestment_Card{
+    padding: 1rem;
+  }
+  
 }
