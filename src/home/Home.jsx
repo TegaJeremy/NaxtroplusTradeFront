@@ -151,26 +151,7 @@ const Home = () => {
           </div>
           <div className="section3-Home">
             <div className="section3-Home-Header">
-              <motion.h4
-                initial={{
-                  opacity: 0,
-                  x: 300,
-                }}
-                transition={{
-                  type: "spring",
-                  stiffness: 30,
-                  mass: 1.5,
-                }}
-                // animate={{ opacity: 1, y: 0 }}
-                whileInView={{
-                  opacity: 1,
-                  x: 0,
-                  //   delay: stagger(0.05),
-                }}
-                viewport={{ margin: "-40px", once: "true" }}
-              >
-                OUR INVESTMENT PLANS
-              </motion.h4>
+              <h4>OUR INVESTMENT PLANS</h4>
               <motion.h1
                 initial={{
                   opacity: 0,

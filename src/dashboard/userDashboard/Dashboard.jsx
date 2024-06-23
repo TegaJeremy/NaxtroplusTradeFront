@@ -111,78 +111,6 @@ const Dashboard = () => {
         <CheckVerifications />
         <>
           <div className="dashboard-coin-card-container">
-            <div className="dashboard-coin-card-body">
-              <div className="dashboard-coin-card-holder">
-                <div className="dashboard-coin-card-holder-up">
-                  <div className="dashboard-coin-card-up-left">
-                    <div
-                      className="livecoinwatch-widget-1"
-                      lcw-coin="BTC"
-                      lcw-base="USD"
-                      lcw-secondary="BTC"
-                      lcw-period="d"
-                      lcw-color-tx="#ffffff"
-                      lcw-color-pr="#58c7c5"
-                      lcw-color-bg="#1f2434"
-                      lcw-border-w="0"
-                    ></div>
-                  </div>
-                  <div className="dashboard-coin-card-up-right">
-                    <script
-                      defer
-                      src="https://www.livecoinwatch.com/static/lcw-widget.js"
-                    ></script>
-                    <div
-                      className="livecoinwatch-widget-1"
-                      lcw-coin="ETH"
-                      lcw-base="USD"
-                      lcw-secondary="BTC"
-                      lcw-period="d"
-                      lcw-color-tx="#ffffff"
-                      lcw-color-pr="#58c7c5"
-                      lcw-color-bg="#1f2434"
-                      lcw-border-w="0"
-                    ></div>
-                  </div>
-                </div>
-                <div className="dashboard-coin-card-holder-down">
-                  <div className="dashboard-coin-card-down-left">
-                    <script
-                      defer
-                      src="https://www.livecoinwatch.com/static/lcw-widget.js"
-                    ></script>
-                    <div
-                      className="livecoinwatch-widget-1"
-                      lcw-coin="USDT"
-                      lcw-base="USD"
-                      lcw-secondary="BTC"
-                      lcw-period="d"
-                      lcw-color-tx="#ffffff"
-                      lcw-color-pr="#58c7c5"
-                      lcw-color-bg="#1f2434"
-                      lcw-border-w="0"
-                    ></div>
-                  </div>
-                  <div className="dashboard-coin-card-down-right">
-                    <script
-                      defer
-                      src="https://www.livecoinwatch.com/static/lcw-widget.js"
-                    ></script>
-                    <div
-                      className="livecoinwatch-widget-1"
-                      lcw-coin="SOL"
-                      lcw-base="USD"
-                      lcw-secondary="BTC"
-                      lcw-period="d"
-                      lcw-color-tx="#ffffff"
-                      lcw-color-pr="#58c7c5"
-                      lcw-color-bg="#1f2434"
-                      lcw-border-w="0"
-                    ></div>
-                  </div>
-                </div>
-              </div>
-            </div>
             <div className="dashboard-coin-balance-body">
               <SymbolOverview width="100%" colorTheme="dark" />
             </div>
@@ -219,82 +147,17 @@ const Dashboard = () => {
                 </div>
             </div>
           </div>
-          <div className="profit-calculator-container">
-            <div className="profit-calculator-body">
-              <div className="profit-calculator-left-card">
-                <div className="profit-calculator-select-container">
-                  <label htmlFor="plans" className="select-investment-label">
-                    Select Investment
-                  </label>
-                  <div
-                    className="select-wrapper"
-                    style={{
-                      backgroundColor: "black",
-                      color: "white",
-                      cursor: "pointer",
-                      // padding: "0.5rem",
-                    }}
-                  >
-                    <div
-                      name=""
-                      id=""
-                      className="select-investment-plan-select"
-                      multiple
-                    >
-                      <p value="starter-plan">
-                        <a href="/investment">Basic plan</a>
-                      </p>
-                      <p value="silver-plan">
-                        <a href="/investment">Pro Plan</a>
-                      </p>
-                      <p value="gold-plan">
-                        <a href="investment">Premium Plan</a>
-                      </p>
-                      <p value="vip-plan">
-                        <a href="/investment">Retirement Plan</a>
-                      </p>
-
-                      {/* <option value="vip-platnium-plan">
-                        VIP Platinum Plan
-                      </option> */}
-                    </div>
-                  </div>
-                  <br />
-                  <br />
-                  {/* <button className="profit-calculator-btn">
-                    Calculate Profits
-                  </button> */}
-                </div>
+          <div className="dashboard_plan">
+              <h3>Start a plan :</h3>
+              <div className="the_plans">
+                <div className="plans" onClick={()=>nav("/investment")}>Starter Plan</div>
+                <div className="plans" onClick={()=>nav("/investment")}>Premium Plan</div>
+                <div className="plans" onClick={()=>nav("/investment")}>Enterprise Plan</div>
+                <div className="plans" onClick={()=>nav("/investment")}>Pro Plan</div>
+                <div className="plans" onClick={()=>nav("/investment")}>Ultimate Plan</div>
               </div>
-              {/* <div className="profit-calculator-right-card">
-                <div className="profit-calculator-right-body">
-                  <span className="profit-calculator-right-body-span">
-                    Your profit will display here
-                  </span>
-                </div>
-              </div> */}
-            </div>
           </div>
           <div className="dashboard-recent-transaction-investment-container">
-            {/* <div className="dashboard-recent-transaction-card">
-              <div className="dashboard-recent-transaction-body">
-                <h5 className="dashboard-recent-transaction-card-title">
-                  Recent Transactions
-                </h5>
-                <div className="recent-transaction-ul-wrapper">
-                  {lastestTransaction.length === 0}
-                  <span
-                    style={{ fontSize: "30px" }}
-                    className="recent-transaction-ul-span"
-                  >
-                    Transactions
-                  </span>
-                  
-
-                  <ul></ul>
-                </div>
-              </div>
-            </div> */}
             <div className="dashboard-recent-investment">
               <div className="dashboard-recent-investment-body">
                 <h5 className="dashboard-recent-investment-card-title">
@@ -358,19 +221,7 @@ const Dashboard = () => {
               )}
             </div>
           </div>
-          <div className="dashboard-stock-market-widget-wrapper">
-            <div className="dashboard-stock-market-widget-div">
-              <StockMarket width="100%" colorTheme="dark" />
-            </div>
-            <div className="dashboard-stock-market-widget-div">
-              <EconomicCalendar width="100%" colorTheme="dark" />
-            </div>
-            <div className="dashboard-stock-market-widget-div">
-              <CryptoCurrencyMarket width="100%" colorTheme="dark" />
-            </div>
-          </div>
         </>
-        {/*  }  */}
       </div>
     </div>
   );

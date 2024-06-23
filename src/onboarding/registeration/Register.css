@@ -1,12 +1,14 @@
 .signUp_Page {
   width: 100%;
-  height: max-content;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background: 
     linear-gradient(to left, rgba(0, 0, 0, 0.903), rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.707)), 
     url('../../assets/starbg.jpeg');
+    overflow: auto;
+    padding-top: 100px;
 }
 
 .signUp_PageWrapper {
@@ -204,7 +206,8 @@
   color: white;
   font-size: 16px;
   font-weight: bold;
-  padding: 0.5rem 1rem;
+  padding: 01rem 1rem;
+  margin-bottom: 20px;
 }
 
 .SignUp_Buttons button:hover {
@@ -239,8 +242,3 @@
   color: #fff;
 }
 
-@media screen and (max-width: 1250px) and (min-width: 780px) {
-  .special-inpu {
-    padding-left: 2%;
-  }
-}
