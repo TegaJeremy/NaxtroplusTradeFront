@@ -148,14 +148,17 @@ const Dashboard = () => {
             </div>
           </div>
           <div className="dashboard_plan">
-              <h3>Start a plan :</h3>
-              <div className="the_plans">
-                <div className="plans" onClick={()=>nav("/investment")}>Starter Plan</div>
-                <div className="plans" onClick={()=>nav("/investment")}>Premium Plan</div>
-                <div className="plans" onClick={()=>nav("/investment")}>Enterprise Plan</div>
-                <div className="plans" onClick={()=>nav("/investment")}>Pro Plan</div>
-                <div className="plans" onClick={()=>nav("/investment")}>Ultimate Plan</div>
-              </div>
+            <h3>Start a plan :</h3>
+            <div className="the_plans">
+              <div className="plans" onClick={()=>nav("/investment")}>Starter Plan</div>
+              <div className="plans" onClick={()=>nav("/investment")}>Premium Plan</div>
+              <div className="plans" onClick={()=>nav("/investment")}>Enterprise Plan</div>
+              <div className="plans" onClick={()=>nav("/investment")}>Pro Plan</div>
+              <div className="plans" onClick={()=>nav("/investment")}>Ultimate Plan</div>
+            </div>
+          </div>
+          <div className="dashboard_stock_widget">
+            <StockMarket width="100%" colorTheme="dark" />
           </div>
           <div className="dashboard-recent-transaction-investment-container">
             <div className="dashboard-recent-investment">
@@ -220,6 +223,9 @@ const Dashboard = () => {
                 </div>
               )}
             </div>
+          </div>
+          <div className="dashboard_stock_widget">
+            <CryptoCurrencyMarket width="100%" colorTheme="dark" />
           </div>
         </>
       </div>
