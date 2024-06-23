@@ -1,28 +1,26 @@
-@media only screen and (min-width: 320px) and (max-width: 580px) {
+@media screen and (max-width: 800px) {
+
+  .CardPlan-Container-Main:hover {
+    transform: none;
+  }
   .CardPlan-Container {
     width: 100%;
-    height: 50vh;
-    background-color: grey;
+    height: auto;
+    /* background-color: red !important; */
   }
-
-  .CardPlan-Container-Main {
-    justify-content: space-evenly;
+  .CardPlan-title {
+    /* background-color: aqua; */
+    gap: 20px;
   }
-
   .CardPlan-title img {
-    /* width: 40%; */
-    height: 70%;
+    /* width: 20%; */
+    height: 50px !important;
   }
-
   .CardPlan-title h4 {
-    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
   }
 
-  .CardPlan-Details h5 {
-    font-size: 12px;
-  }
-
-  .CardPlan-CTA button {
-    height: 100%;
-  }
 }
+
