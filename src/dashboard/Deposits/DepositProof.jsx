@@ -76,11 +76,11 @@ function DepositProof() {
 
   useEffect(() => {
     userGateWay === "Bitcoin"
-      ? setwallet("1AwBidSZMd7pw2zq6ScomjCHMEgmz7MMLG")
+      ? setwallet("bc1qxncptvvtlkz7eqc6lq7wylvz960ujhre4u7038")
       : userGateWay === "Ethereum"
-      ? setwallet("1AwBidSZMd7pw2zq6ScomjCHMEgmz7MMLG")
+      ? setwallet("0xED4835275c36ef5fbE2d011ce64Eb1388Cf4e12A")
       : userGateWay === "Usdt"
-      ? setwallet("THPoLVTj57tNNcbiumqbct1JYGnGUgNwLA")
+      ? setwallet("0xED4835275c36ef5fbE2d011ce64Eb1388Cf4e12A")
       : "";
   }, []);
 
