@@ -68,7 +68,7 @@ function Kyc() {
     try {
       console.log(token);
       const response = await axios.post(
-        `https://naxtrotrade.onrender.com/kycVerification/${token}`,
+        `https://naxtrotradebackup.onrender.com/kycVerification/${token}`,
         formData
       );
       console.log(response);

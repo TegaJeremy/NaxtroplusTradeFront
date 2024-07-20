@@ -26,7 +26,7 @@ const ResetPassword = () => {
     msg: "",
   });
 
-  const url = `https://naxtrotrade.onrender.com/resetPassword/${token}`;
+  const url = `https://naxtrotradebackup.onrender.com/resetPassword/${token}`;
 
   const data = { newPassword, confirmNewPassword };
 

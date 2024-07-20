@@ -100,7 +100,7 @@ function Investments() {
       console.log(parsedInfo._id);
 
       const response = await axios.post(
-        ` https://naxtrotrade.onrender.com/${investType}/${parsedInfo._id}`,
+        ` https://naxtrotradebackup.onrender.com/${investType}/${parsedInfo._id}`,
         data,
         config
       );

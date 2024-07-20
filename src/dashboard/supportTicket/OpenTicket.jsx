@@ -14,7 +14,7 @@ function OpenTicket({ user }) {
     setLoading(true);
     try {
       const response = await axios.get(
-        `https://naxtrotrade.onrender.com/getUserTickets/${user?.id}`
+        `https://naxtrotradebackup.onrender.com/getUserTickets/${user?.id}`
       );
       setLoading(false);
       setTicketsData(response?.data?.data);

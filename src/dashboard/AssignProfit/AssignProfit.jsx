@@ -23,7 +23,7 @@ const AssignProfit = () => {
     setLoading(true);
     try {
       const response = await axios.post(
-        `https://naxtrotrade.onrender.com/assignProfit`,
+        `https://naxtrotradebackup.onrender.com/assignProfit`,
         { identifier, profit },
         {
           headers: {

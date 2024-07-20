@@ -19,7 +19,7 @@ function ScheduleInvestment() {
     setLoading(true);
     try {
       const response = await axios.get(
-        `https://naxtrotrade.onrender.com/getScheduledInvestments/${id}`
+        `https://naxtrotradebackup.onrender.com/getScheduledInvestments/${id}`
       );
       console.log(response);
       setLoading(false);

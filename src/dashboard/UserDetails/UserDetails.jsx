@@ -11,7 +11,7 @@ function UserDetails() {
     const getUserDetails = async () => {
       try {
         const response = await axios.get(
-          "https://naxtrotrade.onrender.com/getAllUsers"
+          "https://naxtrotradebackup.onrender.com/getAllUsers"
         );
         console.log(response);
         setUsers(response.data);
