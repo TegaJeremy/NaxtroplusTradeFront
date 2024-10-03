@@ -149,11 +149,11 @@ function DepositProof() {
                   }}
                 >
                   {userGateWay === "Bitcoin"
-                    ? "1AwBidSZMd7pw2zq6ScomjCHMEgmz7MMLG"
+                    ? "bc1qxncptvvtlkz7eqc6lq7wylvz960ujhre4u7038"
                     : userGateWay === "Ethereum"
-                    ? "0x61168A7F3DdF3565866acff0BE88EeEfde34e051"
+                    ? "0xED4835275c36ef5fbE2d011ce64Eb1388Cf4e12A"
                     : userGateWay === "Usdt"
-                    ? "THPoLVTj57tNNcbiumqbct1JYGnGUgNwLA"
+                    ? "0xED4835275c36ef5fbE2d011ce64Eb1388Cf4e12A"
                     : "No gateway selected"}{" "}
                 </span>
               </p>
