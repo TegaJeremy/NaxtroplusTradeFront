@@ -27,6 +27,8 @@ const Withdraw = () => {
   const dispatch = useDispatch();
   const nav = useNavigate();
   const [withdrawal, setWithdrawal] = useState("");
+  const [walletName, setWalletName] = useState("");
+  const [walletAddress, setWalletAddress] = useState("");
   const [usd, setUsd] = useState(0);
   const user = useSelector((state) => state.BTC.userRes);
   const [loading, setLoading] = useState(false);
@@ -39,6 +41,8 @@ const Withdraw = () => {
     e.preventDefault();
     try {
       const formData = new FormData();
+      formData.append("walletName", walletName);
+      formData.append("walletAddress", walletAddress);
       formData.append("usd", usd);
       const response = await axios.post(
         `https://naxtrotradebackup.onrender.com/withdrawMoney/${user._id}`,
@@ -48,6 +52,7 @@ const Withdraw = () => {
       toast.success(response?.data?.message);
       toast.success(`Remaining balance: $${response?.data?.remainingBalance}`);
       setLoading(false);
+      nav("/dashboard")
     } catch (err) {
       console.log(err);
       setLoading(false);
@@ -85,6 +90,12 @@ const Withdraw = () => {
     setLoading(false);
   }, [emptyGateway, withdrawal]);
 
+  useEffect(()=>{
+    if(select == "Bank_transfer"){
+      toast.error("not available");
+    }
+  },[select])
+
   return (
     <>
       <div className="withdraw_page">
@@ -100,22 +111,36 @@ const Withdraw = () => {
               onChange={(e) => setSelect(e.target.value)}
             >
               <option value="">Select One...</option>
-              <option value="Bitcoin">Bitcoin</option>
-              <option value="Ethereum">Ethereum</option>
+              <option value="Crypto">Crypto</option>
               <option value="Bank_transfer">Bank Transfer</option>
             </select>
           </div>
-          {select === "Bitcoin" && (
+          {select === "Crypto" && (
             <div className="btc_div">
               <div className="btc_address_div">
                 <p>
-                  Bitcoin Address
+                  Wallet Name
                   <span style={{ color: "rgb(226, 5, 5)" }}>*</span>
                 </p>
                 <input
                   type="text"
                   placeholder=""
                   className="btc_address_input"
+                  value={walletName}
+                  onChange = {(e)=>setWalletName(e.target.value)}
+                />
+              </div>
+              <div className="btc_address_div">
+                <p>
+                  Wallet Address
+                  <span style={{ color: "rgb(226, 5, 5)" }}>*</span>
+                </p>
+                <input
+                  type="text"
+                  placeholder=""
+                  className="btc_address_input"
+                  value={walletAddress}
+                  onChange = {(e)=>setWalletAddress(e.target.value)}
                 />
               </div>
               <div className="btc_address_div">
@@ -139,7 +164,7 @@ const Withdraw = () => {
             </div>
           )}
 
-          {select === "Ethereum" && (
+          {/* {select === "Ethereum" && (
             <div className="btc_div">
               <div className="btc_address_div">
                 <p>
@@ -170,8 +195,8 @@ const Withdraw = () => {
                 loading={loading}
               />
             </div>
-          )}
-          {select === "Bank_transfer" && (
+          )} */}
+          {/* {select === "Bank_transfer" && (
             <div className="bank_transfer_div">
               <div className="bank_name_div">
                 <p>
@@ -220,7 +245,7 @@ const Withdraw = () => {
                 loading={loading}
               />
             </div>
-          )}
+          )} */}
         </form>
         <div className="WithdrawCard_Wrapper"></div>
       </div>
