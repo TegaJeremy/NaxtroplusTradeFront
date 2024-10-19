@@ -124,7 +124,7 @@ const Withdraw = () => {
                 </p>
                 <input
                   type="text"
-                  placeholder=""
+                  placeholder="eg. bitcoin, ethereum, usdt..."
                   className="btc_address_input"
                   value={walletName}
                   onChange = {(e)=>setWalletName(e.target.value)}
@@ -163,7 +163,6 @@ const Withdraw = () => {
               />
             </div>
           )}
-
           {/* {select === "Ethereum" && (
             <div className="btc_div">
               <div className="btc_address_div">
