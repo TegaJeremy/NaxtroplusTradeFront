@@ -3,12 +3,15 @@ import { NextUIProvider } from "@nextui-org/react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useSelector } from "react-redux";
 import Landing from "./home/Landing";
+import Malicious from "./Edges/malicious";
 import Home from "./home/Home";
-import Contact from "./contactUs/ContactUs";
+ import Contact from "./contactUs/ContactUs";
 import Terms from "./terms/Terms";
 import UserMenu from "./dashboard/userMenu/UserMenu";
 import About from "./about/About";
-import Private from "./components/Private/Private";
+ import Private from "./components/Private/Private";
+ import { Navigate } from "react-router-dom";
+
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -55,22 +58,26 @@ function App() {
         <BrowserRouter>
           <ScrollToTop />
           <Routes>
-            <Route element={<Landing />}>
-              <Route path="/" element={<Home />} />
-              <Route path="/terms" element={<Terms />} />
+            <Route>
+            {/* <Route element={<Landing />}> */}
+             <Route path="/" element={<Malicious />} />
+            {/* <Route path="/" element={<Malicious />} /> */}
+              {/* <Route path="/" element={<Home />} /> */}
+              {/* <Route path="/terms" element={<Terms />} />
               <Route path="/contact" element={<Contact />} />
-              <Route path="/about" element={<About />} />
+              <Route path="/about" element={<About />} /> */}
             </Route>
+             <Route path="*" element={<Navigate to="/" replace />} />
 
-            <Route path="/login" element={<Login />} />
+            {/* <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/reset_password/:token" element={<ResetPassword />} />
             <Route path="/verify/:token" element={<OneTimePassword />} />
-            <Route path="/forget_password" element={<ForgetPassword />} />
+            <Route path="/forget_password" element={<ForgetPassword />} /> */}
             
             
               {/* <Route path="/userDashboard/*" element={<Private />}></Route> */}
-            <Route element={<thePrivate />}></Route>
+            {/* <Route element={<thePrivate />}></Route>
             <Route element={<UserMenu />}>
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/investment" element={<Investments />} />
@@ -91,7 +98,7 @@ function App() {
               <Route path="/supportTicket" element={<SupportTicket />} /> 
               <Route path="/transaction" element={<Transaction />} />
               <Route path="/scheduleInvestment" element={<ScheduleInvestment />}/>
-            </Route>
+            </Route> */}
 
 
           </Routes>

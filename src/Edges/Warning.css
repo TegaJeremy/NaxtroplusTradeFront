@@ -1,0 +1,59 @@
+.warning-container {
+  background: #d32f2f;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+}
+
+.warning-box {
+  max-width: 600px;
+  text-align: left;
+}
+
+.icon {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.buttons {
+  margin-top: 25px;
+}
+
+.details-btn,
+.safe-btn {
+  padding: 12px 20px;
+  margin-right: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.details-btn {
+  background: white;
+  color: #d32f2f;
+}
+
+.safe-btn {
+  background: #ffffff33;
+  color: white;
+  border: 1px solid white;
+}
+
+.checkbox {
+  margin-top: 20px;
+  font-size: 14px;
+}
