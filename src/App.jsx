@@ -47,37 +47,37 @@ import DeleteUser from "./dashboard/DeleteUser/DeleteUser";
 import ScrollToTop from "./ScrollToTop";
 
 import thePrivate from "./components/thePrivate";
+ {/* <Route path="*" element={<Navigate to="/" replace />} /> */}
+  {/* <Route path="/" element={<Malicious />} /> } */}
 
 function App() {
 
 
   const AdminUser = useSelector((state) => state.BTC.userRes);
   return (
-    <>
-      <NextUIProvider>
-        <BrowserRouter>
-          <ScrollToTop />
-          <Routes>
-            <Route>
-            {/* <Route element={<Landing />}> */}
-             <Route path="/" element={<Malicious />} />
-            {/* <Route path="/" element={<Malicious />} /> */}
-              {/* <Route path="/" element={<Home />} /> */}
-              {/* <Route path="/terms" element={<Terms />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/about" element={<About />} /> */}
-            </Route>
-             <Route path="*" element={<Navigate to="/" replace />} />
+  <>
+    <NextUIProvider>
+      <BrowserRouter>
+        <ScrollToTop />
+        <Routes>
 
-            {/* <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
-            <Route path="/reset_password/:token" element={<ResetPassword />} />
-            <Route path="/verify/:token" element={<OneTimePassword />} />
-            <Route path="/forget_password" element={<ForgetPassword />} /> */}
-            
-            
-              {/* <Route path="/userDashboard/*" element={<Private />}></Route> */}
-            {/* <Route element={<thePrivate />}></Route>
+          {/* Public Landing Wrapper */}
+          <Route element={<Landing />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/terms" element={<Terms />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/about" element={<About />} />
+          </Route>
+
+          {/* Auth routes */}
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/reset_password/:token" element={<ResetPassword />} />
+          <Route path="/verify/:token" element={<OneTimePassword />} />
+          <Route path="/forget_password" element={<ForgetPassword />} />
+
+          {/* Protected User Dashboard Wrapper */}
+          <Route element={<Private />}>
             <Route element={<UserMenu />}>
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/investment" element={<Investments />} />
@@ -89,24 +89,23 @@ function App() {
               <Route path="/delete-user" element={<DeleteUser />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/user-details" element={<UserDetails />} />
-              <Route path="/profile-setting" element={<ProfileSettingPage user={AdminUser} />}/>
+              <Route path="/profile-setting" element={<ProfileSettingPage user={AdminUser} />} />
               <Route path="/kyc" element={<Kyc />} />
               <Route path="/twoFA" element={<TwoFA />} />
               <Route path="/pending-kyc" element={<PendingKyc />} />
-              <Route path="/pending-tickets" element={<PendingTickets />} /> 
+              <Route path="/pending-tickets" element={<PendingTickets />} />
               <Route path="/referral" element={<Referral />} />
-              <Route path="/supportTicket" element={<SupportTicket />} /> 
+              <Route path="/supportTicket" element={<SupportTicket />} />
               <Route path="/transaction" element={<Transaction />} />
-              <Route path="/scheduleInvestment" element={<ScheduleInvestment />}/>
-            </Route> */}
+              <Route path="/scheduleInvestment" element={<ScheduleInvestment />} />
+            </Route>
+          </Route>
 
-
-          </Routes>
-        </BrowserRouter>
-        <ToastContainer />
-      </NextUIProvider>
-    </>
-  );
+        </Routes>
+      </BrowserRouter>
+      <ToastContainer />
+    </NextUIProvider>
+  </>
+);
 }
-
 export default App;
