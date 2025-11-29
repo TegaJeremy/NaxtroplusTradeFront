@@ -1,25 +1,37 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
+// import { useSelector } from "react-redux";
+
+// export const usePrivateStatus = () => {
+//   const [loggedIn, setLoggedIn] = useState(false);
+
+//   const { login } = useSelector((state) => {
+//     console.log("Login status:", state.BTC.user.login);
+//     return state.BTC.user;
+//   });
+
+//   useEffect(() => {
+//     if (login) {
+//       setLoggedIn(true);
+//     } else {
+//       setLoggedIn(false);
+//     }
+//   }, [login]);
+
+//   useEffect(() => {
+//     console.log("loggedIn:", loggedIn);
+//   }, [loggedIn]);
+
+//   return { loggedIn };
+// };
 import { useSelector } from "react-redux";
 
 export const usePrivateStatus = () => {
-  const [loggedIn, setLoggedIn] = useState(false);
+  const token = useSelector((state) => state.BTC.user?.token);
 
-  const { login } = useSelector((state) => {
-    console.log("Login status:", state.BTC.user.login);
-    return state.BTC.user;
-  });
+  // Also check localStorage if you save token there
+  const storedToken = localStorage.getItem("token");
 
-  useEffect(() => {
-    if (login) {
-      setLoggedIn(true);
-    } else {
-      setLoggedIn(false);
-    }
-  }, [login]);
+  const finalToken = token || storedToken;
 
-  useEffect(() => {
-    console.log("loggedIn:", loggedIn);
-  }, [loggedIn]);
-
-  return { loggedIn };
+  return { loggedIn: !!finalToken };
 };
